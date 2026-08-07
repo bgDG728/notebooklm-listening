@@ -427,7 +427,7 @@ _TEMPLATE = """
       </div>
     `;
     const enEl = div.querySelector('.en');
-    enEl.appendChild(buildWordSpans(seg.text));
+    enEl.textContent = seg.text; // 先放純文字,捲動到附近時才拆成可點擊單字(見 hydrateWords)
     enEl.addEventListener('click', (e) => {{
       if (e.target.classList.contains('word')) {{
         e.stopPropagation();
@@ -454,6 +454,34 @@ _TEMPLATE = """
     list.appendChild(div);
     return div;
   }});
+
+  // 效能優化:353 句一次全部拆成單字 span 會產生數千個 DOM 節點,
+  // 手機瀏覽器記憶體吃緊時容易當機。改成捲動到附近才拆字。
+  const hydrated = new WeakSet();
+  function hydrateWords(row, seg) {{
+    if (hydrated.has(row)) return;
+    hydrated.add(row);
+    const enEl = row.querySelector('.en');
+    enEl.textContent = '';
+    enEl.appendChild(buildWordSpans(seg.text));
+    markSavedWords();
+  }}
+
+  if ('IntersectionObserver' in window) {{
+    const observer = new IntersectionObserver((entries) => {{
+      entries.forEach((entry) => {{
+        if (entry.isIntersecting) {{
+          const idx = parseInt(entry.target.dataset.index, 10);
+          hydrateWords(entry.target, segments[idx]);
+          observer.unobserve(entry.target);
+        }}
+      }});
+    }}, {{ root: list, rootMargin: '400px 0px' }});
+    rows.forEach((row) => observer.observe(row));
+  }} else {{
+    // 舊瀏覽器沒有 IntersectionObserver,退回一次全部拆好
+    rows.forEach((row, i) => hydrateWords(row, segments[i]));
+  }}
 
   renderVocab();
   markSavedWords();
