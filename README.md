@@ -1,15 +1,25 @@
 # NotebookLM 聽力練習
 
-把 NotebookLM 產生的 Audio Overview(podcast)轉成「英文逐字稿 + 中文翻譯 +
-點擊跳轉 + 播放時自動高亮」的聽力練習介面。因為 NotebookLM 本身不提供逐字稿
-匯出功能,這個專案用本機 Whisper 語音辨識來補上這一塊。
+把 NotebookLM 產生的 Audio Overview(podcast)轉成一套完整的英文聽力練習
+工具:英文逐字稿 + 中文翻譯 + 點擊跳轉 + 播放時自動高亮,再加上單句循環、
+聽寫模式、點字生字本這些學習功能。因為 NotebookLM 本身不提供逐字稿匯出
+功能,這個專案用本機 Whisper 語音辨識來補上這一塊。
+
+## 功能
+
+- **同步逐字稿**:英文原文 + 中文翻譯逐句對照,播放到哪句自動高亮+捲動到該句
+- **點擊跳轉**:點任一句直接跳去該句播放
+- **單句循環播放**:跟讀/精聽某一句時,反覆播放到你按掉為止
+- **聽寫模式**:文字預設模糊看不清楚,播放中的句子才會顯示原文,訓練真正用耳朵聽懂
+- **生字本**:點英文單字直接存進生字本(含出處例句+中文翻譯),存在瀏覽器本機,可一鍵複製匯出
+- **關鍵字搜尋**:快速找到提到某個字/句的地方
+- **調整播放速度**:0.75x / 1x / 1.25x / 1.5x
 
 ## 線上使用
 
 部署在 Streamlit Community Cloud,手機/電腦瀏覽器打開網址即可使用,不需要
-跟電腦同一個 Wi-Fi:
-
-https://notebooklm-listening-btbg6pib3yktmnc2cyxjsj.streamlit.app
+跟電腦同一個 Wi-Fi。實際網址請見 Streamlit Cloud 後台(share.streamlit.io)
+底下 `bgDG728/notebooklm-listening` 這個 app 的 URL。
 
 ## 專案結構
 
@@ -113,3 +123,9 @@ venv\Scripts\python.exe export_offline.py transcripts\你的檔名.json
   `static/` 資料夾讓元件自己內嵌播放,但這個功能在目前環境下對
   `/app/static/*` 的請求會靜默 fallback 回前端 SPA 頁面(回傳
   200 但內容是錯的),所以放棄這條路,改用上面同源 iframe 的做法。
+- 生字本用 `window.parent.localStorage` 存,跟主頁面共用同一份瀏覽器儲存,
+  換句話說**生字本是存在該瀏覽器/裝置本機的**,清瀏覽器資料或換裝置/換
+  瀏覽器都不會同步過去。想長期保存的話用「複製全部」匯出成文字。
+- 本機開發時如果改了 `player_component.py` 或 `app.py` 卻沒生效,先確認
+  是不是有多個 `streamlit run` 進程占用同個 port 沒關掉(`Get-NetTCPConnection
+  -LocalPort 8501` 可以查),而不是先懷疑程式碼寫錯。

@@ -5,11 +5,13 @@
 而是透過 window.parent.document 抓取 st.audio() 產生的原生 <audio> 元素
 (components.v1.html 的 iframe 跟主頁面同源,可以直接互相存取 DOM)。
 
-好處:
-  - 音檔播放本身沿用 Streamlit 官方、經過驗證可靠的 st.audio() 機制
+功能:
   - 播放時自動高亮當前句子並自動捲動到該句
   - 點擊任一句直接跳轉播放,不需要整頁重新渲染(不會 st.rerun)
   - 可調整播放速度、關鍵字搜尋跳轉
+  - 單句循環播放(跟讀/精聽練習)
+  - 聽寫模式:文字預設隱藏,點句子播放時才顯示
+  - 點英文單字加入生字本(存在瀏覽器 localStorage,可複製匯出)
 """
 
 import json
@@ -39,17 +41,20 @@ _TEMPLATE = """
       align-items: center;
       gap: 8px;
       flex-wrap: wrap;
+      margin-bottom: 6px;
     }}
     .controls-row label {{ font-size: 0.85rem; color: #555; }}
-    .speed-btn, .zh-toggle-btn {{
+    .btn {{
       border: 1px solid #ccc;
       background: #fff;
       border-radius: 6px;
       padding: 4px 10px;
       font-size: 0.82rem;
       cursor: pointer;
+      white-space: nowrap;
     }}
-    .speed-btn.active {{ background: #ff4b4b; color: #fff; border-color: #ff4b4b; }}
+    .btn.active {{ background: #ff4b4b; color: #fff; border-color: #ff4b4b; }}
+    .btn.on {{ background: #0d6efd; color: #fff; border-color: #0d6efd; }}
     .search-box {{
       flex: 1;
       min-width: 120px;
@@ -58,7 +63,41 @@ _TEMPLATE = """
       border-radius: 6px;
       font-size: 0.85rem;
     }}
-    #status {{ font-size: 0.78rem; color: #b00; margin-top: 6px; }}
+    #status {{ font-size: 0.78rem; color: #b00; margin-top: 2px; }}
+
+    #vocabPanel {{
+      display: none;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 4px;
+      max-height: 220px;
+      overflow-y: auto;
+      background: #fafafa;
+    }}
+    #vocabPanel.open {{ display: block; }}
+    .vocab-item {{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 0.85rem;
+    }}
+    .vocab-item .word {{ font-weight: 700; }}
+    .vocab-item .ctx {{ color: #777; font-size: 0.78rem; }}
+    .vocab-item button {{
+      border: none;
+      background: none;
+      color: #b00;
+      cursor: pointer;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }}
+    .vocab-empty {{ color: #999; font-size: 0.85rem; }}
+    .vocab-toolbar {{ display: flex; gap: 8px; margin-bottom: 6px; }}
+
     #list {{
       overflow-y: auto;
       flex: 1;
@@ -74,6 +113,7 @@ _TEMPLATE = """
     }}
     .seg:hover {{ background: #f7f7f9; }}
     .seg.active {{ background: #fff4e5; }}
+    .seg.looping {{ background: #e7f0ff; }}
     .seg.dimmed {{ display: none; }}
     .seg .ts {{
       flex-shrink: 0;
@@ -82,23 +122,66 @@ _TEMPLATE = """
       font-size: 0.78rem;
       padding-top: 2px;
     }}
-    .seg .en {{ font-weight: 600; line-height: 1.45; font-size: 0.95rem; }}
+    .seg .en {{ font-weight: 600; line-height: 1.6; font-size: 0.95rem; }}
     .seg .zh {{ color: #666; margin-top: 4px; line-height: 1.45; font-size: 0.88rem; }}
     .seg.hide-zh .zh {{ display: none; }}
-    mark {{ background: #ffe08a; padding: 0 1px; }}
+
+    .word {{
+      border-radius: 3px;
+      padding: 0 1px;
+    }}
+    .word:active {{ background: #ffe08a; }}
+    .word.saved {{ background: #d7ecff; }}
+    .word.search-hit {{ background: #ffe08a; }}
+
+    /* 聽寫模式:文字預設模糊看不清楚,點該句(revealed)才清楚 */
+    #app.dictation .seg .en,
+    #app.dictation .seg .zh {{
+      filter: blur(6px);
+      user-select: none;
+      transition: filter 0.15s;
+    }}
+    #app.dictation .seg.revealed .en,
+    #app.dictation .seg.revealed .zh {{
+      filter: none;
+      user-select: text;
+    }}
+    .dictation-hint {{
+      display: none;
+      font-size: 0.78rem;
+      color: #0d6efd;
+      margin-top: 4px;
+    }}
+    #app.dictation .dictation-hint {{ display: block; }}
   </style>
 
   <div class="toolbar">
     <div class="controls-row">
       <label>速度:</label>
-      <button class="speed-btn" data-speed="0.75">0.75x</button>
-      <button class="speed-btn active" data-speed="1">1x</button>
-      <button class="speed-btn" data-speed="1.25">1.25x</button>
-      <button class="speed-btn" data-speed="1.5">1.5x</button>
-      <button class="zh-toggle-btn" id="zhToggle">隱藏中文</button>
+      <button class="btn speed-btn" data-speed="0.75">0.75x</button>
+      <button class="btn speed-btn active" data-speed="1">1x</button>
+      <button class="btn speed-btn" data-speed="1.25">1.25x</button>
+      <button class="btn speed-btn" data-speed="1.5">1.5x</button>
+    </div>
+    <div class="controls-row">
+      <button class="btn" id="loopToggle">🔁 循環目前句子</button>
+      <button class="btn" id="dictationToggle">🙈 聽寫模式</button>
+      <button class="btn zh-toggle-btn" id="zhToggle">隱藏中文</button>
+      <button class="btn" id="vocabToggle">📖 生字本 (<span id="vocabCount">0</span>)</button>
+    </div>
+    <div class="controls-row">
       <input class="search-box" id="search" type="text" placeholder="搜尋關鍵字...">
     </div>
+    <div class="dictation-hint">聽寫模式已開啟:文字預設模糊,點一句播放時該句會顯示原文,考驗你聽不聽得懂。</div>
     <div id="status"></div>
+
+    <div id="vocabPanel">
+      <div class="vocab-toolbar">
+        <button class="btn" id="vocabCopy">複製全部</button>
+        <button class="btn" id="vocabClear">清空生字本</button>
+      </div>
+      <div id="vocabList"></div>
+    </div>
   </div>
 
   <div id="list"></div>
@@ -107,12 +190,98 @@ _TEMPLATE = """
 <script>
 (function() {{
   const segments = {segments_json};
+  const episodeTitle = {episode_title_json};
+  const appEl = document.getElementById('app');
   const list = document.getElementById('list');
   const zhToggle = document.getElementById('zhToggle');
   const search = document.getElementById('search');
   const statusEl = document.getElementById('status');
+  const loopToggle = document.getElementById('loopToggle');
+  const dictationToggle = document.getElementById('dictationToggle');
+  const vocabToggle = document.getElementById('vocabToggle');
+  const vocabPanel = document.getElementById('vocabPanel');
+  const vocabList = document.getElementById('vocabList');
+  const vocabCount = document.getElementById('vocabCount');
+  const vocabCopy = document.getElementById('vocabCopy');
+  const vocabClear = document.getElementById('vocabClear');
+
   let zhVisible = true;
   let activeIndex = -1;
+  let loopEnabled = false;
+  let loopIndex = -1;
+  let dictationMode = false;
+
+  const VOCAB_KEY = 'notebooklm_listening_vocab';
+
+  function loadVocab() {{
+    try {{
+      return JSON.parse(window.parent.localStorage.getItem(VOCAB_KEY) || '[]');
+    }} catch (e) {{
+      return [];
+    }}
+  }}
+
+  function saveVocab(list) {{
+    window.parent.localStorage.setItem(VOCAB_KEY, JSON.stringify(list));
+  }}
+
+  function renderVocab() {{
+    const vocab = loadVocab();
+    vocabCount.textContent = vocab.length;
+    vocabList.innerHTML = '';
+    if (vocab.length === 0) {{
+      vocabList.innerHTML = '<div class="vocab-empty">點逐字稿裡的英文單字,就會加進這裡。</div>';
+      return;
+    }}
+    vocab.slice().reverse().forEach((item) => {{
+      const div = document.createElement('div');
+      div.className = 'vocab-item';
+      const safeWord = item.word.replace(/</g, '&lt;');
+      const safeSentence = item.sentence.replace(/</g, '&lt;');
+      div.innerHTML = `
+        <div>
+          <div class="word">${{safeWord}}</div>
+          <div class="ctx">${{safeSentence}}</div>
+        </div>
+        <button title="移除">✕</button>
+      `;
+      div.querySelector('button').addEventListener('click', () => {{
+        const updated = loadVocab().filter((v) => v.ts !== item.ts);
+        saveVocab(updated);
+        renderVocab();
+        markSavedWords();
+      }});
+      vocabList.appendChild(div);
+    }});
+  }}
+
+  function addToVocab(word, sentence, zh) {{
+    const vocab = loadVocab();
+    const clean = word.replace(/[.,!?;:"'()]/g, '');
+    if (!clean) return;
+    const exists = vocab.some((v) => v.word.toLowerCase() === clean.toLowerCase());
+    if (exists) {{
+      statusEl.textContent = `「${{clean}}」已經在生字本裡了。`;
+      statusEl.style.color = '#888';
+      setTimeout(() => {{ statusEl.textContent = ''; }}, 1500);
+      return;
+    }}
+    vocab.push({{ word: clean, sentence, zh, episode: episodeTitle, ts: Date.now() }});
+    saveVocab(vocab);
+    renderVocab();
+    markSavedWords();
+    statusEl.style.color = '#0a0';
+    statusEl.textContent = `已加入生字本:${{clean}}`;
+    setTimeout(() => {{ statusEl.textContent = ''; }}, 1500);
+  }}
+
+  function markSavedWords() {{
+    const vocab = loadVocab().map((v) => v.word.toLowerCase());
+    document.querySelectorAll('.word').forEach((el) => {{
+      const clean = el.textContent.replace(/[.,!?;:"'()]/g, '').toLowerCase();
+      el.classList.toggle('saved', vocab.includes(clean));
+    }});
+  }}
 
   function getPlayer() {{
     try {{
@@ -128,11 +297,21 @@ _TEMPLATE = """
     return m + ':' + s;
   }}
 
-  function highlightMatch(text, query) {{
-    if (!query) return text;
-    const idx = text.toLowerCase().indexOf(query.toLowerCase());
-    if (idx === -1) return text;
-    return text.slice(0, idx) + '<mark>' + text.slice(idx, idx + query.length) + '</mark>' + text.slice(idx + query.length);
+  // 把一句英文拆成可點擊的單字 span,標點符號留在旁邊不拆開語意。
+  function buildWordSpans(text) {{
+    const frag = document.createDocumentFragment();
+    const tokens = text.split(/(\\s+)/);
+    tokens.forEach((tok) => {{
+      if (/^\\s+$/.test(tok) || tok === '') {{
+        frag.appendChild(document.createTextNode(tok));
+        return;
+      }}
+      const span = document.createElement('span');
+      span.className = 'word';
+      span.textContent = tok;
+      frag.appendChild(span);
+    }});
+    return frag;
   }}
 
   const rows = segments.map((seg, i) => {{
@@ -146,6 +325,16 @@ _TEMPLATE = """
         <div class="zh"></div>
       </div>
     `;
+    const enEl = div.querySelector('.en');
+    enEl.appendChild(buildWordSpans(seg.text));
+    enEl.addEventListener('click', (e) => {{
+      if (e.target.classList.contains('word')) {{
+        e.stopPropagation();
+        addToVocab(e.target.textContent, seg.text, seg.zh || '');
+      }}
+    }});
+    div.querySelector('.zh').textContent = seg.zh || '';
+
     div.addEventListener('click', () => {{
       const player = getPlayer();
       if (!player) {{
@@ -154,23 +343,31 @@ _TEMPLATE = """
       }}
       player.currentTime = seg.start;
       player.play();
+      if (loopEnabled) loopIndex = i;
+      if (dictationMode) div.classList.add('revealed');
     }});
     list.appendChild(div);
     return div;
   }});
 
-  function renderText(query) {{
-    segments.forEach((seg, i) => {{
-      rows[i].querySelector('.en').innerHTML = highlightMatch(seg.text, query);
-      rows[i].querySelector('.zh').innerHTML = highlightMatch(seg.zh || '', query);
-    }});
-  }}
-  renderText('');
+  renderVocab();
+  markSavedWords();
 
   function onTimeUpdate() {{
     const player = getPlayer();
     if (!player) return;
     const t = player.currentTime;
+
+    if (loopEnabled && loopIndex !== -1) {{
+      const seg = segments[loopIndex];
+      const next = segments[loopIndex + 1];
+      const segEnd = next ? next.start : (seg.end || player.duration);
+      if (t >= segEnd || t < seg.start) {{
+        player.currentTime = seg.start;
+        return;
+      }}
+    }}
+
     let idx = segments.findIndex((seg, i) => {{
       const next = segments[i + 1];
       return t >= seg.start && (!next || t < next.start);
@@ -179,6 +376,7 @@ _TEMPLATE = """
       if (activeIndex !== -1) rows[activeIndex].classList.remove('active');
       rows[idx].classList.add('active');
       rows[idx].scrollIntoView({{ block: 'center', behavior: 'smooth' }});
+      if (dictationMode) rows[idx].classList.add('revealed');
       activeIndex = idx;
     }}
   }}
@@ -196,19 +394,68 @@ _TEMPLATE = """
     }});
   }});
 
+  loopToggle.addEventListener('click', () => {{
+    loopEnabled = !loopEnabled;
+    loopToggle.classList.toggle('on', loopEnabled);
+    if (loopEnabled) {{
+      loopIndex = activeIndex !== -1 ? activeIndex : 0;
+      rows.forEach(r => r.classList.remove('looping'));
+      rows[loopIndex].classList.add('looping');
+      statusEl.style.color = '#0d6efd';
+      statusEl.textContent = '循環播放已開啟:會一直重複目前這句,點別句可以換循環目標。';
+    }} else {{
+      rows.forEach(r => r.classList.remove('looping'));
+      statusEl.textContent = '';
+    }}
+  }});
+
+  dictationToggle.addEventListener('click', () => {{
+    dictationMode = !dictationMode;
+    dictationToggle.classList.toggle('on', dictationMode);
+    appEl.classList.toggle('dictation', dictationMode);
+    if (!dictationMode) {{
+      rows.forEach(r => r.classList.remove('revealed'));
+    }}
+  }});
+
   zhToggle.addEventListener('click', () => {{
     zhVisible = !zhVisible;
     zhToggle.textContent = zhVisible ? '隱藏中文' : '顯示中文';
     rows.forEach(r => r.classList.toggle('hide-zh', !zhVisible));
   }});
 
+  vocabToggle.addEventListener('click', () => {{
+    vocabPanel.classList.toggle('open');
+    if (vocabPanel.classList.contains('open')) renderVocab();
+  }});
+
+  vocabCopy.addEventListener('click', () => {{
+    const vocab = loadVocab();
+    const text = vocab.map(v => `${{v.word}} — ${{v.sentence}}${{v.zh ? ' (' + v.zh + ')' : ''}}`).join('\\n');
+    navigator.clipboard.writeText(text).then(() => {{
+      statusEl.style.color = '#0a0';
+      statusEl.textContent = '生字本已複製到剪貼簿。';
+      setTimeout(() => {{ statusEl.textContent = ''; }}, 1500);
+    }});
+  }});
+
+  vocabClear.addEventListener('click', () => {{
+    if (!confirm('確定要清空整個生字本嗎?')) return;
+    saveVocab([]);
+    renderVocab();
+    markSavedWords();
+  }});
+
   search.addEventListener('input', () => {{
-    const q = search.value.trim();
-    renderText(q);
+    const q = search.value.trim().toLowerCase();
     rows.forEach((row, i) => {{
       const seg = segments[i];
-      const matches = !q || seg.text.toLowerCase().includes(q.toLowerCase()) || (seg.zh || '').includes(q);
+      const matches = !q || seg.text.toLowerCase().includes(q) || (seg.zh || '').includes(q);
       row.classList.toggle('dimmed', !matches);
+      row.querySelectorAll('.word').forEach((w) => {{
+        const hit = q && w.textContent.toLowerCase().includes(q);
+        w.classList.toggle('search-hit', !!hit);
+      }});
     }});
   }});
 
@@ -231,6 +478,9 @@ _TEMPLATE = """
 """
 
 
-def render(segments: list[dict], height: int = 700):
-    html = _TEMPLATE.format(segments_json=json.dumps(segments, ensure_ascii=False))
+def render(segments: list[dict], episode_title: str = "", height: int = 760):
+    html = _TEMPLATE.format(
+        segments_json=json.dumps(segments, ensure_ascii=False),
+        episode_title_json=json.dumps(episode_title, ensure_ascii=False),
+    )
     components.html(html, height=height, scrolling=True)

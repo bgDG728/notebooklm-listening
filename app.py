@@ -51,4 +51,4 @@ if not audio_path.exists():
 audio_format = MIME_BY_EXT.get(audio_path.suffix.lower(), "audio/mpeg")
 st.audio(str(audio_path), format=audio_format)
 
-player_component.render(segments)
+player_component.render(segments, episode_title=chosen.stem)
