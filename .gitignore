@@ -2,3 +2,5 @@ venv/
 offline/
 __pycache__/
 *.pyc
+static/
+.streamlit/
