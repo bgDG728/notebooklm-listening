@@ -118,6 +118,10 @@ _TEMPLATE = """
     .seg .ts {{
       flex-shrink: 0;
       width: 46px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
       color: #888;
       font-size: 0.78rem;
       padding-top: 2px;
@@ -125,6 +129,37 @@ _TEMPLATE = """
     .seg .en {{ font-weight: 600; line-height: 1.6; font-size: 0.95rem; }}
     .seg .zh {{ color: #666; margin-top: 4px; line-height: 1.45; font-size: 0.88rem; }}
     .seg.hide-zh .zh {{ display: none; }}
+
+    .mic-btn {{
+      border: 1px solid #ddd;
+      background: #fff;
+      border-radius: 999px;
+      width: 26px;
+      height: 26px;
+      font-size: 0.85rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0;
+    }}
+    .mic-btn.recording {{
+      background: #d00;
+      color: #fff;
+      border-color: #d00;
+      animation: mic-pulse 1s infinite;
+    }}
+    @keyframes mic-pulse {{
+      0%, 100% {{ opacity: 1; }}
+      50% {{ opacity: 0.5; }}
+    }}
+    .my-recording {{
+      display: none;
+      margin-top: 6px;
+      align-items: center;
+      gap: 6px;
+    }}
+    .my-recording.has-audio {{ display: flex; }}
+    .my-recording audio {{ height: 30px; max-width: 220px; }}
+    .my-recording .label {{ font-size: 0.75rem; color: #888; white-space: nowrap; }}
 
     .word {{
       border-radius: 3px;
@@ -212,6 +247,61 @@ _TEMPLATE = """
   let dictationMode = false;
 
   const VOCAB_KEY = 'notebooklm_listening_vocab';
+
+  // ---- 跟讀錄音(口說練習)----
+  let activeRecorder = null;
+  let activeRecordingRow = null;
+
+  async function toggleRecord(i, row) {{
+    const micBtn = row.querySelector('.mic-btn');
+
+    if (activeRecordingRow === i) {{
+      activeRecorder.stop();
+      return;
+    }}
+    if (activeRecorder) {{
+      activeRecorder.stop();
+    }}
+
+    if (!navigator.mediaDevices || !window.MediaRecorder) {{
+      statusEl.textContent = '這個瀏覽器不支援錄音功能。';
+      return;
+    }}
+
+    try {{
+      const stream = await navigator.mediaDevices.getUserMedia({{ audio: true }});
+      const recorder = new MediaRecorder(stream);
+      const chunks = [];
+      recorder.ondataavailable = (e) => {{ if (e.data.size > 0) chunks.push(e.data); }};
+      recorder.onstop = () => {{
+        stream.getTracks().forEach((t) => t.stop());
+        const blob = new Blob(chunks, {{ type: recorder.mimeType || 'audio/webm' }});
+        const url = URL.createObjectURL(blob);
+        const container = row.querySelector('.my-recording');
+        const audioEl = container.querySelector('audio');
+        if (audioEl.src) URL.revokeObjectURL(audioEl.src);
+        audioEl.src = url;
+        container.classList.add('has-audio');
+        micBtn.classList.remove('recording');
+        micBtn.textContent = '🎙️';
+        micBtn.title = '重新錄音';
+        activeRecorder = null;
+        activeRecordingRow = null;
+        statusEl.textContent = '';
+      }};
+      recorder.start();
+      activeRecorder = recorder;
+      activeRecordingRow = i;
+      micBtn.classList.add('recording');
+      micBtn.textContent = '⏹';
+      micBtn.title = '停止錄音';
+      statusEl.style.color = '#0d6efd';
+      statusEl.textContent = '錄音中...再按一次麥克風圖示停止。';
+    }} catch (e) {{
+      statusEl.style.color = '#b00';
+      statusEl.textContent = '無法使用麥克風(請確認已允許權限):' + e.message;
+    }}
+  }}
 
   function loadVocab() {{
     try {{
@@ -319,10 +409,17 @@ _TEMPLATE = """
     div.className = 'seg';
     div.dataset.index = i;
     div.innerHTML = `
-      <div class="ts">${{fmt(seg.start)}}</div>
+      <div class="ts">
+        <div>${{fmt(seg.start)}}</div>
+        <button class="mic-btn" title="錄音跟讀">🎙️</button>
+      </div>
       <div style="flex:1">
         <div class="en"></div>
         <div class="zh"></div>
+        <div class="my-recording">
+          <span class="label">你的錄音:</span>
+          <audio controls></audio>
+        </div>
       </div>
     `;
     const enEl = div.querySelector('.en');
@@ -334,6 +431,10 @@ _TEMPLATE = """
       }}
     }});
     div.querySelector('.zh').textContent = seg.zh || '';
+    div.querySelector('.mic-btn').addEventListener('click', (e) => {{
+      e.stopPropagation();
+      toggleRecord(i, div);
+    }});
 
     div.addEventListener('click', () => {{
       const player = getPlayer();
