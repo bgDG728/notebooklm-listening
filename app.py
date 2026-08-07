@@ -14,6 +14,12 @@ PROJECT_ROOT = Path(__file__).parent
 AUDIO_DIR = PROJECT_ROOT / "audio"
 TRANSCRIPTS_DIR = PROJECT_ROOT / "transcripts"
 
+MIME_BY_EXT = {
+    ".m4a": "audio/mp4",
+    ".mp3": "audio/mpeg",
+    ".wav": "audio/wav",
+}
+
 st.set_page_config(page_title="英文聽力練習", layout="wide")
 st.title("🎧 NotebookLM 聽力練習")
 
@@ -43,7 +49,8 @@ if not audio_path.exists():
     st.error(f"找不到對應音檔:{audio_path}")
     st.stop()
 
-st.audio(str(audio_path), start_time=st.session_state.seek_time)
+audio_format = MIME_BY_EXT.get(audio_path.suffix.lower(), "audio/mpeg")
+st.audio(str(audio_path), format=audio_format, start_time=st.session_state.seek_time)
 
 st.divider()
 
