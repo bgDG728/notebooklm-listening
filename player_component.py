@@ -21,6 +21,10 @@ import streamlit.components.v1 as components
 _TEMPLATE = """
 <div id="app">
   <style>
+    html, body {{
+      height: 100%;
+      margin: 0;
+    }}
     #app {{
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: #111;
