@@ -78,6 +78,14 @@ _TEMPLATE = """
     }}
     .btn.active {{ background: #ff4b4b; color: #fff; border-color: #ff4b4b; }}
     .btn.on {{ background: #0d6efd; color: #fff; border-color: #0d6efd; }}
+    .speed-display {{
+      display: inline-block;
+      min-width: 54px;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+    }}
     .search-box {{
       flex: 1;
       min-width: 120px;
@@ -184,10 +192,10 @@ _TEMPLATE = """
     </audio>
     <div class="controls-row">
       <label>速度:</label>
-      <button class="btn speed-btn" data-speed="0.75">0.75x</button>
-      <button class="btn speed-btn active" data-speed="1">1x</button>
-      <button class="btn speed-btn" data-speed="1.25">1.25x</button>
-      <button class="btn speed-btn" data-speed="1.5">1.5x</button>
+      <button class="btn" id="speedDown">－</button>
+      <span id="speedDisplay" class="speed-display">1.00x</span>
+      <button class="btn" id="speedUp">＋</button>
+      <button class="btn" id="speedReset">重設</button>
     </div>
     <div class="controls-row">
       <button class="btn" id="loopToggle">🔁 循環目前句子</button>
@@ -420,13 +428,22 @@ _TEMPLATE = """
     }}
   }});
 
-  document.querySelectorAll('.speed-btn').forEach(btn => {{
-    btn.addEventListener('click', () => {{
-      document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      player.playbackRate = parseFloat(btn.dataset.speed);
-    }});
-  }});
+  // 語速微調:0.05 為單位加減,比固定倍數按鈕更精細。
+  const SPEED_MIN = 0.5, SPEED_MAX = 2.0, SPEED_STEP = 0.05;
+  let currentSpeed = 1.0;
+  const speedDisplay = document.getElementById('speedDisplay');
+
+  function setSpeed(v) {{
+    const stepped = Math.round(v / SPEED_STEP) * SPEED_STEP;
+    currentSpeed = Math.min(SPEED_MAX, Math.max(SPEED_MIN, stepped));
+    player.playbackRate = currentSpeed;
+    speedDisplay.textContent = currentSpeed.toFixed(2) + 'x';
+  }}
+
+  document.getElementById('speedDown').addEventListener('click', () => setSpeed(currentSpeed - SPEED_STEP));
+  document.getElementById('speedUp').addEventListener('click', () => setSpeed(currentSpeed + SPEED_STEP));
+  document.getElementById('speedReset').addEventListener('click', () => setSpeed(1.0));
+  setSpeed(1.0);
 
   loopToggle.addEventListener('click', () => {{
     loopEnabled = !loopEnabled;
