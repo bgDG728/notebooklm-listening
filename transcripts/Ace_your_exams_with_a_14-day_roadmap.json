@@ -1,0 +1,1667 @@
+{
+  "audio_file": "Ace_your_exams_with_a_14-day_roadmap.m4a",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.28,
+      "text": "you're staring at a semester's worth of notes. It's midnight. Your brain is screaming at you to",
+      "zh": ""
+    },
+    {
+      "start": 5.28,
+      "end": 11.44,
+      "text": "just start reading from page one and not stop until you physically pass out. You feel like if",
+      "zh": ""
+    },
+    {
+      "start": 11.44,
+      "end": 16.48,
+      "text": "you just push harder, the information will stick. That right there, that is a biological trap.",
+      "zh": ""
+    },
+    {
+      "start": 16.48,
+      "end": 21.84,
+      "text": "It's what cognitive scientists call the illusion of competence. Yeah, it's the single biggest",
+      "zh": ""
+    },
+    {
+      "start": 21.84,
+      "end": 27.44,
+      "text": "mistakes students make, really. You read a textbook, you recognize the words and your",
+      "zh": ""
+    },
+    {
+      "start": 27.44,
+      "end": 32.96,
+      "text": "brain says, oh, I know this. But recognizing information on a page is completely different",
+      "zh": ""
+    },
+    {
+      "start": 32.96,
+      "end": 37.12,
+      "text": "from being able to actually retrieve it under pressure in a silent exam hall.",
+      "zh": ""
+    },
+    {
+      "start": 37.12,
+      "end": 40.88,
+      "text": "And the instinct to just pull an all-nighter to cram that information in?",
+      "zh": ""
+    },
+    {
+      "start": 40.88,
+      "end": 45.28,
+      "text": "It's physiologically counterproductive. I mean, when you're sleep-deprived and stressed,",
+      "zh": ""
+    },
+    {
+      "start": 45.28,
+      "end": 48.88,
+      "text": "you're chemically blocking memory consolidation. You aren't learning...",
+      "zh": ""
+    },
+    {
+      "start": 48.88,
+      "end": 50.56,
+      "text": "You're just exhausting your working memory.",
+      "zh": ""
+    },
+    {
+      "start": 50.56,
+      "end": 52.64,
+      "text": "Exactly. You're burning fuel without moving the car.",
+      "zh": ""
+    },
+    {
+      "start": 52.64,
+      "end": 57.2,
+      "text": "So we're not going to do that today. For this deep dive, our purpose is to give you",
+      "zh": ""
+    },
+    {
+      "start": 57.2,
+      "end": 63.04,
+      "text": "a structured, evidence-based 14-day revision framework. We are moving you from panic",
+      "zh": ""
+    },
+    {
+      "start": 63.04,
+      "end": 69.04,
+      "text": "to what these authors call a performance mindset, prioritizing active retrieval over passive reading.",
+      "zh": ""
+    },
+    {
+      "start": 69.04,
+      "end": 73.12,
+      "text": "Because this isn't about motivation. It's about logistics. If you have two weeks left,",
+      "zh": ""
+    },
+    {
+      "start": 73.12,
+      "end": 78.08,
+      "text": "you have exactly enough time. But only if you stop reading and start retrieving.",
+      "zh": ""
+    },
+    {
+      "start": 78.08,
+      "end": 81.6,
+      "text": "Let's start with the biology of why cramming fails. Because I think people need to",
+      "zh": ""
+    },
+    {
+      "start": 81.6,
+      "end": 87.2,
+      "text": "understand that this isn't a character flaw. It's a hardware issue.",
+      "zh": ""
+    },
+    {
+      "start": 87.2,
+      "end": 90.24,
+      "text": "Why does the brain shut down when we try to do too much at once?",
+      "zh": ""
+    },
+    {
+      "start": 90.88,
+      "end": 95.28,
+      "text": "It really comes down to energy. In the book Focus, the author explains that maintaining",
+      "zh": ""
+    },
+    {
+      "start": 95.28,
+      "end": 100.48,
+      "text": "attention requires top-down processing. This is your prefrontal cortex making a conscious,",
+      "zh": ""
+    },
+    {
+      "start": 100.48,
+      "end": 105.44,
+      "text": "deliberate choice to ignore distractions. And that requires a massive amount of metabolic",
+      "zh": ""
+    },
+    {
+      "start": 105.44,
+      "end": 108.0,
+      "text": "energy. It's very expensive for your body to do.",
+      "zh": ""
+    },
+    {
+      "start": 108.0,
+      "end": 111.6,
+      "text": "So when you try to force that for 12 hours straight, you're essentially trying to run",
+      "zh": ""
+    },
+    {
+      "start": 111.6,
+      "end": 116.32,
+      "text": "a sprint for a marathon distance. Exactly. You deplete the energy supply rapidly.",
+      "zh": ""
+    },
+    {
+      "start": 116.32,
+      "end": 122.72,
+      "text": "When that top-down control fails due to fatigue, your brain defaults to bottom-up processing.",
+      "zh": ""
+    },
+    {
+      "start": 122.72,
+      "end": 127.36,
+      "text": "That's the primitive setting. It means every distraction pulls focus away.",
+      "zh": ""
+    },
+    {
+      "start": 127.36,
+      "end": 129.92,
+      "text": "Right. So every phone notification, every noise.",
+      "zh": ""
+    },
+    {
+      "start": 129.92,
+      "end": 133.36,
+      "text": "Every sudden worry, yeah. It grabs your attention involuntarily.",
+      "zh": ""
+    },
+    {
+      "start": 133.36,
+      "end": 138.24,
+      "text": "You physically lose the ability to filter. So you might stare at a page for an hour,",
+      "zh": ""
+    },
+    {
+      "start": 138.24,
+      "end": 142.48,
+      "text": "but you haven't encoded anything. That connects perfectly to the 80-20 rule",
+      "zh": ""
+    },
+    {
+      "start": 142.48,
+      "end": 147.52,
+      "text": "from all the work you shouldn't do. I think most students assume they need to know 100%",
+      "zh": ""
+    },
+    {
+      "start": 147.52,
+      "end": 151.76,
+      "text": "of the syllabus to get a good grade. Which is statistically impossible and",
+      "zh": ""
+    },
+    {
+      "start": 151.76,
+      "end": 155.92,
+      "text": "strategically wrong. The Pareto principle suggests that 80% of your marks will come",
+      "zh": ""
+    },
+    {
+      "start": 155.92,
+      "end": 160.56,
+      "text": "from mastering 20% of the core material. Cramming is usually an attempt to learn",
+      "zh": ""
+    },
+    {
+      "start": 160.56,
+      "end": 165.84,
+      "text": "100% of the course in 48 hours. Leaving you with a very shallow understanding of everything.",
+      "zh": ""
+    },
+    {
+      "start": 165.84,
+      "end": 170.64,
+      "text": "Right. You end up with a vague, shaky understanding that falls apart under questioning.",
+      "zh": ""
+    },
+    {
+      "start": 170.64,
+      "end": 173.68,
+      "text": "A structured revision plan accepts that you can't know everything.",
+      "zh": ""
+    },
+    {
+      "start": 173.68,
+      "end": 177.36,
+      "text": "Instead, it ensures you have bulletproof mastery of the high-value concepts that",
+      "zh": ""
+    },
+    {
+      "start": 177.36,
+      "end": 180.32,
+      "text": "actually score points. Okay, so let's look at the actual solution.",
+      "zh": ""
+    },
+    {
+      "start": 180.32,
+      "end": 183.92,
+      "text": "We're working with the model primarily from 14 days to exam success.",
+      "zh": ""
+    },
+    {
+      "start": 184.48,
+      "end": 187.52,
+      "text": "The strategy here hinges on a very specific number.",
+      "zh": ""
+    },
+    {
+      "start": 188.24,
+      "end": 194.4,
+      "text": "Eight. Yes, the strategic division. It's a way to stop the overwhelm instantly. You take every",
+      "zh": ""
+    },
+    {
+      "start": 194.4,
+      "end": 198.56,
+      "text": "single piece of material you need to learn. So lecture notes, textbooks, handouts, scribbles",
+      "zh": ""
+    },
+    {
+      "start": 198.56,
+      "end": 203.76,
+      "text": "on napkins, and you divide them into exactly eight physical piles or digital folders.",
+      "zh": ""
+    },
+    {
+      "start": 203.76,
+      "end": 207.44,
+      "text": "Why eight though? If I have four modules, shouldn't I have four piles?",
+      "zh": ""
+    },
+    {
+      "start": 207.44,
+      "end": 211.76,
+      "text": "The math is about the calendar, not the module count. That's the key shift here.",
+      "zh": ""
+    },
+    {
+      "start": 211.76,
+      "end": 217.04,
+      "text": "You have 14 days. If you have eight sections of material, you cover one section per day",
+      "zh": ""
+    },
+    {
+      "start": 217.04,
+      "end": 222.0,
+      "text": "for the first eight days. Leaving you six days at the end for reviewing, spiraling back,",
+      "zh": ""
+    },
+    {
+      "start": 222.0,
+      "end": 224.08,
+      "text": "and what they call tuning up. Precisely.",
+      "zh": ""
+    },
+    {
+      "start": 224.08,
+      "end": 227.2,
+      "text": "But practically that might mean combining things, right,",
+      "zh": ""
+    },
+    {
+      "start": 227.2,
+      "end": 230.88,
+      "text": "because students get really hung up on matching the syllabus structure perfectly.",
+      "zh": ""
+    },
+    {
+      "start": 230.88,
+      "end": 235.44,
+      "text": "Absolutely. If you just divide by module, you might end up with a pile that takes three",
+      "zh": ""
+    },
+    {
+      "start": 235.44,
+      "end": 240.4,
+      "text": "days to get through, which completely destroys your momentum. You have to be ruthless.",
+      "zh": ""
+    },
+    {
+      "start": 241.04,
+      "end": 246.48,
+      "text": "You might combine two small topics, say the causes of World War One and the consequences",
+      "zh": ""
+    },
+    {
+      "start": 246.48,
+      "end": 252.88,
+      "text": "into one section, or split a massive molecular biology module into three separate sections.",
+      "zh": ""
+    },
+    {
+      "start": 252.88,
+      "end": 258.24,
+      "text": "So the goal is to make them equal in effort, not necessarily equal in academic weight.",
+      "zh": ""
+    },
+    {
+      "start": 258.24,
+      "end": 261.68,
+      "text": "Exactly. The goal is in academic symmetry, it's manageable chunks.",
+      "zh": ""
+    },
+    {
+      "start": 262.4,
+      "end": 266.4,
+      "text": "You want to wake up on day three knowing exactly what section three contains",
+      "zh": ""
+    },
+    {
+      "start": 266.4,
+      "end": 269.04,
+      "text": "and knowing that when you finish it, you're done for the day.",
+      "zh": ""
+    },
+    {
+      "start": 269.04,
+      "end": 270.56,
+      "text": "It creates a clear finish line.",
+      "zh": ""
+    },
+    {
+      "start": 270.56,
+      "end": 273.6,
+      "text": "Which is a huge psychological win when you're feeling panicked.",
+      "zh": ""
+    },
+    {
+      "start": 273.6,
+      "end": 278.8,
+      "text": "Once we have those eight sections, ace, your exams suggest we shouldn't just be doing",
+      "zh": ""
+    },
+    {
+      "start": 278.8,
+      "end": 281.92,
+      "text": "the same type of work for two weeks. There's a progression to it.",
+      "zh": ""
+    },
+    {
+      "start": 281.92,
+      "end": 285.36,
+      "text": "The author breaks this down into three distinct phases.",
+      "zh": ""
+    },
+    {
+      "start": 285.36,
+      "end": 289.2,
+      "text": "Phase one is primary revision. That's those first eight days.",
+      "zh": ""
+    },
+    {
+      "start": 289.2,
+      "end": 292.64,
+      "text": "You are re-engaging with the sources and making sense of the big picture.",
+      "zh": ""
+    },
+    {
+      "start": 292.64,
+      "end": 294.64,
+      "text": "Then we shift gears to phase two.",
+      "zh": ""
+    },
+    {
+      "start": 294.64,
+      "end": 298.08,
+      "text": "Drastically. Phase two is note refining.",
+      "zh": ""
+    },
+    {
+      "start": 298.08,
+      "end": 300.0,
+      "text": "You stop looking at the textbooks entirely.",
+      "zh": ""
+    },
+    {
+      "start": 300.0,
+      "end": 302.72,
+      "text": "You start condensing your notes into essentials cards.",
+      "zh": ""
+    },
+    {
+      "start": 302.72,
+      "end": 305.68,
+      "text": "You're stripping away the fluff to reveal the core structure.",
+      "zh": ""
+    },
+    {
+      "start": 305.68,
+      "end": 307.04,
+      "text": "And the final phase?",
+      "zh": ""
+    },
+    {
+      "start": 307.04,
+      "end": 311.12,
+      "text": "Performance tuning. This is crucial and often skipped.",
+      "zh": ""
+    },
+    {
+      "start": 311.12,
+      "end": 315.76,
+      "text": "This is where you practice output rather than input, answering questions under time pressure.",
+      "zh": ""
+    },
+    {
+      "start": 315.76,
+      "end": 319.92,
+      "text": "There's also a specific mention of the final 48 hours, the zoning in phase.",
+      "zh": ""
+    },
+    {
+      "start": 319.92,
+      "end": 321.6,
+      "text": "That's the psychological pivot.",
+      "zh": ""
+    },
+    {
+      "start": 321.6,
+      "end": 324.4,
+      "text": "Two days before the exam, you stop learning new things.",
+      "zh": ""
+    },
+    {
+      "start": 324.4,
+      "end": 328.32,
+      "text": "Stop learning. That sounds terrifying to a student who feels totally unprepared.",
+      "zh": ""
+    },
+    {
+      "start": 328.32,
+      "end": 331.92,
+      "text": "You have to. If you don't know it by then, trying to force it in will just panic you",
+      "zh": ""
+    },
+    {
+      "start": 331.92,
+      "end": 334.8,
+      "text": "and confuse what you do know. You switched to polishing.",
+      "zh": ""
+    },
+    {
+      "start": 334.8,
+      "end": 340.0,
+      "text": "You focus on nub cards, which are single cards containing the absolute core concepts of a topic.",
+      "zh": ""
+    },
+    {
+      "start": 340.56,
+      "end": 342.8,
+      "text": "You're an athlete tapering before a race.",
+      "zh": ""
+    },
+    {
+      "start": 342.8,
+      "end": 345.84,
+      "text": "You don't run a marathon the day before the marathon.",
+      "zh": ""
+    },
+    {
+      "start": 345.84,
+      "end": 347.68,
+      "text": "Let's get into the daily logistics.",
+      "zh": ""
+    },
+    {
+      "start": 347.68,
+      "end": 349.92,
+      "text": "Because time management is where people really stumble.",
+      "zh": ""
+    },
+    {
+      "start": 350.56,
+      "end": 357.04,
+      "text": "I think the biggest mistake students make is planning a 9 a.m. to 9 p.m. library marathon.",
+      "zh": ""
+    },
+    {
+      "start": 357.04,
+      "end": 359.28,
+      "text": "Volume doesn't equal value. Ace.",
+      "zh": ""
+    },
+    {
+      "start": 360.16,
+      "end": 362.56,
+      "text": "Your exam proposes the six-hour rule.",
+      "zh": ""
+    },
+    {
+      "start": 362.56,
+      "end": 365.92,
+      "text": "You plan for four sessions per day, roughly 90 minutes each.",
+      "zh": ""
+    },
+    {
+      "start": 365.92,
+      "end": 367.44,
+      "text": "That told six hours of work.",
+      "zh": ""
+    },
+    {
+      "start": 368.08,
+      "end": 371.52,
+      "text": "Honestly, for someone panicking, six hours feels like you're slacking off.",
+      "zh": ""
+    },
+    {
+      "start": 371.52,
+      "end": 375.28,
+      "text": "It sounds low, but efficiency drops sharply after a certain point.",
+      "zh": ""
+    },
+    {
+      "start": 375.28,
+      "end": 379.28,
+      "text": "The brain simply cannot maintain that top-down processing for 12 hours.",
+      "zh": ""
+    },
+    {
+      "start": 379.28,
+      "end": 381.76,
+      "text": "You're better off doing six hours of high-quality work.",
+      "zh": ""
+    },
+    {
+      "start": 381.76,
+      "end": 385.84,
+      "text": "And crucially, the planning process isn't just about sliding in study hours.",
+      "zh": ""
+    },
+    {
+      "start": 385.84,
+      "end": 387.68,
+      "text": "You have to schedule time out first.",
+      "zh": ""
+    },
+    {
+      "start": 387.68,
+      "end": 392.08,
+      "text": "Yes. Put life commitments, like sports or meals, into the calendar first.",
+      "zh": ""
+    },
+    {
+      "start": 392.08,
+      "end": 395.52,
+      "text": "A revision plan must be realistic, not aspirational.",
+      "zh": ""
+    },
+    {
+      "start": 395.52,
+      "end": 398.96,
+      "text": "If you plan a 12-hour day and only do eight, you feel like a failure.",
+      "zh": ""
+    },
+    {
+      "start": 398.96,
+      "end": 402.24,
+      "text": "But if you plan a six-hour day and hit it, you feel in control.",
+      "zh": ""
+    },
+    {
+      "start": 402.24,
+      "end": 406.08,
+      "text": "All the work you shouldn't do also advises organizing study time by topic",
+      "zh": ""
+    },
+    {
+      "start": 406.08,
+      "end": 407.44,
+      "text": "rather than by source.",
+      "zh": ""
+    },
+    {
+      "start": 407.44,
+      "end": 409.92,
+      "text": "Right. Don't plan to read lecture four.",
+      "zh": ""
+    },
+    {
+      "start": 409.92,
+      "end": 411.76,
+      "text": "Plan to study molecular bonding.",
+      "zh": ""
+    },
+    {
+      "start": 411.76,
+      "end": 414.64,
+      "text": "It focuses you on solving an intellectual problem.",
+      "zh": ""
+    },
+    {
+      "start": 414.64,
+      "end": 417.6,
+      "text": "And use the traffic light system for tracking.",
+      "zh": ""
+    },
+    {
+      "start": 417.6,
+      "end": 423.44,
+      "text": "Mark topics orange for started, yellow for fine, but shaky, and green for confident.",
+      "zh": ""
+    },
+    {
+      "start": 423.44,
+      "end": 426.64,
+      "text": "It forces you to spend your time on the orange and yellow topics",
+      "zh": ""
+    },
+    {
+      "start": 426.64,
+      "end": 430.08,
+      "text": "instead of just reviewing the green ones because they make you feel smart.",
+      "zh": ""
+    },
+    {
+      "start": 430.08,
+      "end": 434.64,
+      "text": "One detail from focus that I found really validating is about circadian rhythms.",
+      "zh": ""
+    },
+    {
+      "start": 434.64,
+      "end": 436.8,
+      "text": "Young adults often have a delayed rhythm.",
+      "zh": ""
+    },
+    {
+      "start": 436.8,
+      "end": 441.76,
+      "text": "Peak focus might not start until 11 a.m. or later for someone 19 to 25.",
+      "zh": ""
+    },
+    {
+      "start": 441.76,
+      "end": 445.68,
+      "text": "So don't schedule your hardest tasks for 8 a.m. if you're not alert then.",
+      "zh": ""
+    },
+    {
+      "start": 445.68,
+      "end": 448.24,
+      "text": "Exactly. Work with your biological peak.",
+      "zh": ""
+    },
+    {
+      "start": 448.24,
+      "end": 450.72,
+      "text": "Okay, so we sit down for that first 90-minute session.",
+      "zh": ""
+    },
+    {
+      "start": 450.72,
+      "end": 452.0,
+      "text": "What are we actually doing?",
+      "zh": ""
+    },
+    {
+      "start": 452.0,
+      "end": 457.12,
+      "text": "Because 14 days to exam success contrasts active recall with passive review.",
+      "zh": ""
+    },
+    {
+      "start": 457.12,
+      "end": 460.16,
+      "text": "Just reading creates familiarity, but it doesn't build memory.",
+      "zh": ""
+    },
+    {
+      "start": 460.16,
+      "end": 461.6,
+      "text": "You want active recall.",
+      "zh": ""
+    },
+    {
+      "start": 461.6,
+      "end": 463.92,
+      "text": "The book introduces the know-it gremlin.",
+      "zh": ""
+    },
+    {
+      "start": 463.92,
+      "end": 465.12,
+      "text": "The know-it gremlin.",
+      "zh": ""
+    },
+    {
+      "start": 465.12,
+      "end": 468.48,
+      "text": "It's that internal voice that says, I know this, move on.",
+      "zh": ""
+    },
+    {
+      "start": 468.48,
+      "end": 472.16,
+      "text": "Learning to trust this voice prevents wasting time on known material.",
+      "zh": ""
+    },
+    {
+      "start": 472.16,
+      "end": 472.88,
+      "text": "That's hard though.",
+      "zh": ""
+    },
+    {
+      "start": 473.44,
+      "end": 476.64,
+      "text": "The insecurity makes you want to write it down again just to be safe.",
+      "zh": ""
+    },
+    {
+      "start": 476.64,
+      "end": 478.4,
+      "text": "Exactly, and that is a waste of time.",
+      "zh": ""
+    },
+    {
+      "start": 478.4,
+      "end": 481.2,
+      "text": "You need to focus your energy on what you don't know.",
+      "zh": ""
+    },
+    {
+      "start": 481.2,
+      "end": 484.32,
+      "text": "If you can explain a concept to yourself without looking at the paper,",
+      "zh": ""
+    },
+    {
+      "start": 484.32,
+      "end": 485.52,
+      "text": "the gremlin is right.",
+      "zh": ""
+    },
+    {
+      "start": 485.52,
+      "end": 486.56,
+      "text": "Trust it. Move on.",
+      "zh": ""
+    },
+    {
+      "start": 487.36,
+      "end": 490.96,
+      "text": "This leads us to the hierarchy of cards from ace your exam.",
+      "zh": ""
+    },
+    {
+      "start": 490.96,
+      "end": 493.28,
+      "text": "A systematic way to condense notes.",
+      "zh": ""
+    },
+    {
+      "start": 493.28,
+      "end": 496.88,
+      "text": "The card system breaks the habit of just rewriting the textbook.",
+      "zh": ""
+    },
+    {
+      "start": 496.88,
+      "end": 498.96,
+      "text": "You start with session summary notes.",
+      "zh": ""
+    },
+    {
+      "start": 498.96,
+      "end": 502.16,
+      "text": "Messy, quick summaries made immediately after a study block.",
+      "zh": ""
+    },
+    {
+      "start": 502.16,
+      "end": 504.24,
+      "text": "Step two is where the refining happens.",
+      "zh": ""
+    },
+    {
+      "start": 504.24,
+      "end": 506.08,
+      "text": "Yes, essentials cards.",
+      "zh": ""
+    },
+    {
+      "start": 506.08,
+      "end": 510.0,
+      "text": "You take those messy notes and pair them down, organized by theme.",
+      "zh": ""
+    },
+    {
+      "start": 510.0,
+      "end": 513.28,
+      "text": "You're stripping away the fluff and keeping the arguments in evidence.",
+      "zh": ""
+    },
+    {
+      "start": 513.28,
+      "end": 516.88,
+      "text": "And the final step for that zoning in phase we talked about.",
+      "zh": ""
+    },
+    {
+      "start": 516.88,
+      "end": 519.28,
+      "text": "Nub cards. The final reduction.",
+      "zh": ""
+    },
+    {
+      "start": 519.28,
+      "end": 522.08,
+      "text": "Just keywords or triggers on a single card per topic.",
+      "zh": ""
+    },
+    {
+      "start": 522.08,
+      "end": 523.2,
+      "text": "Give me an example.",
+      "zh": ""
+    },
+    {
+      "start": 523.2,
+      "end": 525.36,
+      "text": "What does a nub card actually look like?",
+      "zh": ""
+    },
+    {
+      "start": 525.36,
+      "end": 527.36,
+      "text": "Say you're studying the water cycle.",
+      "zh": ""
+    },
+    {
+      "start": 527.36,
+      "end": 531.28,
+      "text": "Your essentials card might explain evaporation, condensation,",
+      "zh": ""
+    },
+    {
+      "start": 531.28,
+      "end": 532.8,
+      "text": "and precipitation in detail.",
+      "zh": ""
+    },
+    {
+      "start": 533.36,
+      "end": 538.88,
+      "text": "Your nub card might just say heat, vapor, cool, cloud rain.",
+      "zh": ""
+    },
+    {
+      "start": 538.88,
+      "end": 543.04,
+      "text": "Looking at one word on the card unlocks the entire concept in your brain.",
+      "zh": ""
+    },
+    {
+      "start": 543.04,
+      "end": 545.6,
+      "text": "But what about practicing for the exam itself?",
+      "zh": ""
+    },
+    {
+      "start": 545.6,
+      "end": 546.8,
+      "text": "We talked about output.",
+      "zh": ""
+    },
+    {
+      "start": 546.8,
+      "end": 549.52,
+      "text": "Simulation. You have to practice the output.",
+      "zh": ""
+    },
+    {
+      "start": 549.52,
+      "end": 553.92,
+      "text": "Ace! Your exam suggests a 10-minute essay plan exercise.",
+      "zh": ""
+    },
+    {
+      "start": 553.92,
+      "end": 555.28,
+      "text": "This is a game changer.",
+      "zh": ""
+    },
+    {
+      "start": 555.28,
+      "end": 557.84,
+      "text": "Because writing a full essay takes an hour or more.",
+      "zh": ""
+    },
+    {
+      "start": 557.84,
+      "end": 560.32,
+      "text": "Exactly. Instead, look at a past question,",
+      "zh": ""
+    },
+    {
+      "start": 560.32,
+      "end": 563.28,
+      "text": "set a timer for 10 minutes, and just sketch the structure.",
+      "zh": ""
+    },
+    {
+      "start": 563.28,
+      "end": 564.56,
+      "text": "What's your argument?",
+      "zh": ""
+    },
+    {
+      "start": 564.56,
+      "end": 566.0,
+      "text": "What are your three key points?",
+      "zh": ""
+    },
+    {
+      "start": 566.0,
+      "end": 567.44,
+      "text": "What evidence fits where?",
+      "zh": ""
+    },
+    {
+      "start": 567.44,
+      "end": 569.6,
+      "text": "That way you can practice 10 questions in the time",
+      "zh": ""
+    },
+    {
+      "start": 569.6,
+      "end": 571.36,
+      "text": "it takes to write one full answer.",
+      "zh": ""
+    },
+    {
+      "start": 571.36,
+      "end": 572.8,
+      "text": "And you're practicing the hardest part,",
+      "zh": ""
+    },
+    {
+      "start": 572.8,
+      "end": 574.48,
+      "text": "the structuring, and the retrieval.",
+      "zh": ""
+    },
+    {
+      "start": 574.48,
+      "end": 577.52,
+      "text": "Another active recall method mentioned is the teddy bear test.",
+      "zh": ""
+    },
+    {
+      "start": 577.52,
+      "end": 579.28,
+      "text": "Which sounds ridiculous, but...",
+      "zh": ""
+    },
+    {
+      "start": 579.28,
+      "end": 581.52,
+      "text": "It works. Teach the concept to an empty room,",
+      "zh": ""
+    },
+    {
+      "start": 581.52,
+      "end": 583.12,
+      "text": "or a teddy bear, or your cat.",
+      "zh": ""
+    },
+    {
+      "start": 583.68,
+      "end": 587.2,
+      "text": "Verbalizing forces you to structure the information logically.",
+      "zh": ""
+    },
+    {
+      "start": 587.2,
+      "end": 588.72,
+      "text": "Because when you think inside your head,",
+      "zh": ""
+    },
+    {
+      "start": 588.72,
+      "end": 589.68,
+      "text": "you can skip steps.",
+      "zh": ""
+    },
+    {
+      "start": 589.68,
+      "end": 591.44,
+      "text": "When you speak out loud, you can't.",
+      "zh": ""
+    },
+    {
+      "start": 591.44,
+      "end": 593.84,
+      "text": "Exactly. If you stumble while speaking,",
+      "zh": ""
+    },
+    {
+      "start": 593.84,
+      "end": 596.64,
+      "text": "you know exactly where the gap in your knowledge is.",
+      "zh": ""
+    },
+    {
+      "start": 596.64,
+      "end": 598.64,
+      "text": "It exposes that illusion of competence",
+      "zh": ""
+    },
+    {
+      "start": 598.64,
+      "end": 600.0,
+      "text": "we talked about at the start.",
+      "zh": ""
+    },
+    {
+      "start": 600.0,
+      "end": 602.08,
+      "text": "Let's talk about the enemy of all this planning.",
+      "zh": ""
+    },
+    {
+      "start": 602.08,
+      "end": 603.2,
+      "text": "Procrastination.",
+      "zh": ""
+    },
+    {
+      "start": 604.16,
+      "end": 605.76,
+      "text": "Especially in the final stretch.",
+      "zh": ""
+    },
+    {
+      "start": 605.76,
+      "end": 608.56,
+      "text": "Procrastination is often a regulation issue,",
+      "zh": ""
+    },
+    {
+      "start": 608.56,
+      "end": 610.32,
+      "text": "not a laziness issue.",
+      "zh": ""
+    },
+    {
+      "start": 610.32,
+      "end": 612.0,
+      "text": "You're overwhelmed, so you avoid.",
+      "zh": ""
+    },
+    {
+      "start": 612.56,
+      "end": 615.12,
+      "text": "Focus talks a lot about environmental cues.",
+      "zh": ""
+    },
+    {
+      "start": 615.12,
+      "end": 618.4,
+      "text": "Your brain builds associations with locations.",
+      "zh": ""
+    },
+    {
+      "start": 618.4,
+      "end": 622.4,
+      "text": "So, never study on the bed, even in a dorm room.",
+      "zh": ""
+    },
+    {
+      "start": 622.4,
+      "end": 624.8,
+      "text": "Never. Even if you are in a tiny dorm room,",
+      "zh": ""
+    },
+    {
+      "start": 624.8,
+      "end": 626.88,
+      "text": "create a dedicated study area,",
+      "zh": ""
+    },
+    {
+      "start": 626.88,
+      "end": 628.88,
+      "text": "face the wall instead of the window,",
+      "zh": ""
+    },
+    {
+      "start": 628.88,
+      "end": 631.52,
+      "text": "use a specific lamp that you only turn on when you're working.",
+      "zh": ""
+    },
+    {
+      "start": 631.52,
+      "end": 634.56,
+      "text": "When that lamp clicks on, it's a cue for top-down focus.",
+      "zh": ""
+    },
+    {
+      "start": 634.56,
+      "end": 636.4,
+      "text": "You're building a ritual that tells your brain",
+      "zh": ""
+    },
+    {
+      "start": 636.4,
+      "end": 637.44,
+      "text": "we're working now.",
+      "zh": ""
+    },
+    {
+      "start": 637.52,
+      "end": 638.24,
+      "text": "And the phone.",
+      "zh": ""
+    },
+    {
+      "start": 639.04,
+      "end": 643.92,
+      "text": "Both RubyKline and MLLVals identify this as the ultimate focus killer.",
+      "zh": ""
+    },
+    {
+      "start": 643.92,
+      "end": 645.12,
+      "text": "It's the dopamine loop.",
+      "zh": ""
+    },
+    {
+      "start": 645.12,
+      "end": 646.64,
+      "text": "We have a physical stress response",
+      "zh": ""
+    },
+    {
+      "start": 646.64,
+      "end": 648.48,
+      "text": "when we hear a notification and can't check it.",
+      "zh": ""
+    },
+    {
+      "start": 648.48,
+      "end": 649.68,
+      "text": "Your cortisol spikes.",
+      "zh": ""
+    },
+    {
+      "start": 649.68,
+      "end": 651.84,
+      "text": "The only solution is to remove the friction.",
+      "zh": ""
+    },
+    {
+      "start": 651.84,
+      "end": 654.24,
+      "text": "Put the phone in another room, put it in a bag.",
+      "zh": ""
+    },
+    {
+      "start": 654.24,
+      "end": 655.2,
+      "text": "If you can't see it,",
+      "zh": ""
+    },
+    {
+      "start": 655.2,
+      "end": 657.92,
+      "text": "your brain stops spending energy trying to ignore it.",
+      "zh": ""
+    },
+    {
+      "start": 657.92,
+      "end": 659.12,
+      "text": "Fourteen days.",
+      "zh": ""
+    },
+    {
+      "start": 659.12,
+      "end": 661.52,
+      "text": "Also mentions monitoring your energy levels",
+      "zh": ""
+    },
+    {
+      "start": 661.52,
+      "end": 663.44,
+      "text": "to avoid burnout during a session.",
+      "zh": ""
+    },
+    {
+      "start": 663.44,
+      "end": 664.8,
+      "text": "Monitor the drop point.",
+      "zh": ""
+    },
+    {
+      "start": 664.8,
+      "end": 666.0,
+      "text": "You might start strong,",
+      "zh": ""
+    },
+    {
+      "start": 666.0,
+      "end": 667.52,
+      "text": "but after 25 minutes,",
+      "zh": ""
+    },
+    {
+      "start": 667.52,
+      "end": 669.92,
+      "text": "you find you're rereading the same sentence three times.",
+      "zh": ""
+    },
+    {
+      "start": 669.92,
+      "end": 671.12,
+      "text": "That is your dry point.",
+      "zh": ""
+    },
+    {
+      "start": 671.12,
+      "end": 673.04,
+      "text": "The schedule says 90 minutes, though.",
+      "zh": ""
+    },
+    {
+      "start": 673.04,
+      "end": 673.84,
+      "text": "Doesn't matter.",
+      "zh": ""
+    },
+    {
+      "start": 673.84,
+      "end": 676.08,
+      "text": "Do not force yourself to sit there for another hour",
+      "zh": ""
+    },
+    {
+      "start": 676.08,
+      "end": 677.68,
+      "text": "just because the schedule says so.",
+      "zh": ""
+    },
+    {
+      "start": 677.68,
+      "end": 681.12,
+      "text": "Take a break immediately, reset, then go back.",
+      "zh": ""
+    },
+    {
+      "start": 681.12,
+      "end": 683.92,
+      "text": "The schedule is a tool, not a jail sentence.",
+      "zh": ""
+    },
+    {
+      "start": 683.92,
+      "end": 685.92,
+      "text": "This brings us to the final piece of the puzzle.",
+      "zh": ""
+    },
+    {
+      "start": 686.72,
+      "end": 687.76,
+      "text": "Mental clarity.",
+      "zh": ""
+    },
+    {
+      "start": 688.56,
+      "end": 690.72,
+      "text": "We often hear self-care thrown around,",
+      "zh": ""
+    },
+    {
+      "start": 690.72,
+      "end": 692.0,
+      "text": "but in this context,",
+      "zh": ""
+    },
+    {
+      "start": 692.0,
+      "end": 694.4,
+      "text": "it seems more like performance maintenance.",
+      "zh": ""
+    },
+    {
+      "start": 694.4,
+      "end": 696.32,
+      "text": "We need to reframe it completely.",
+      "zh": ""
+    },
+    {
+      "start": 696.32,
+      "end": 697.76,
+      "text": "Sleep is not a luxury.",
+      "zh": ""
+    },
+    {
+      "start": 697.76,
+      "end": 699.6,
+      "text": "It is a cognitive necessity.",
+      "zh": ""
+    },
+    {
+      "start": 699.6,
+      "end": 701.68,
+      "text": "Sleep is when your brain moves information",
+      "zh": ""
+    },
+    {
+      "start": 701.68,
+      "end": 704.24,
+      "text": "from the fragile short-term memory",
+      "zh": ""
+    },
+    {
+      "start": 704.24,
+      "end": 705.76,
+      "text": "into long-term storage.",
+      "zh": ""
+    },
+    {
+      "start": 705.76,
+      "end": 707.68,
+      "text": "So it's like hitting save on a document.",
+      "zh": ""
+    },
+    {
+      "start": 707.68,
+      "end": 708.32,
+      "text": "Precisely.",
+      "zh": ""
+    },
+    {
+      "start": 708.32,
+      "end": 710.96,
+      "text": "If you study for 12 hours and sleep for four,",
+      "zh": ""
+    },
+    {
+      "start": 710.96,
+      "end": 713.36,
+      "text": "you are doing the work and then forgetting to hit save.",
+      "zh": ""
+    },
+    {
+      "start": 713.36,
+      "end": 716.24,
+      "text": "You are actively undoing the work you did during the day.",
+      "zh": ""
+    },
+    {
+      "start": 716.24,
+      "end": 717.68,
+      "text": "What about the anxiety,",
+      "zh": ""
+    },
+    {
+      "start": 717.68,
+      "end": 719.28,
+      "text": "the panic that keeps you awake?",
+      "zh": ""
+    },
+    {
+      "start": 719.28,
+      "end": 722.08,
+      "text": "Focus suggests scheduled worry time.",
+      "zh": ""
+    },
+    {
+      "start": 722.08,
+      "end": 723.44,
+      "text": "If you are spiraling,",
+      "zh": ""
+    },
+    {
+      "start": 723.44,
+      "end": 725.28,
+      "text": "don't fight it while you're trying to work.",
+      "zh": ""
+    },
+    {
+      "start": 725.28,
+      "end": 727.28,
+      "text": "Set a timer for 15 minutes.",
+      "zh": ""
+    },
+    {
+      "start": 727.28,
+      "end": 730.56,
+      "text": "Write down every single catastrophic thought you have.",
+      "zh": ""
+    },
+    {
+      "start": 730.56,
+      "end": 731.92,
+      "text": "Get it all out on paper.",
+      "zh": ""
+    },
+    {
+      "start": 731.92,
+      "end": 733.36,
+      "text": "When the timer rings, stop.",
+      "zh": ""
+    },
+    {
+      "start": 733.92,
+      "end": 735.52,
+      "text": "You have acknowledged the worry,",
+      "zh": ""
+    },
+    {
+      "start": 735.52,
+      "end": 736.96,
+      "text": "you've externalized it,",
+      "zh": ""
+    },
+    {
+      "start": 736.96,
+      "end": 738.64,
+      "text": "now you can return to the task.",
+      "zh": ""
+    },
+    {
+      "start": 738.64,
+      "end": 742.16,
+      "text": "The goal is to reach the exam room calm and zoned in.",
+      "zh": ""
+    },
+    {
+      "start": 742.16,
+      "end": 743.36,
+      "text": "Okay, let's bring this all together.",
+      "zh": ""
+    },
+    {
+      "start": 743.36,
+      "end": 746.0,
+      "text": "We've covered a lot, but it boils down to a system.",
+      "zh": ""
+    },
+    {
+      "start": 746.0,
+      "end": 747.52,
+      "text": "It does. Here's the recap.",
+      "zh": ""
+    },
+    {
+      "start": 747.52,
+      "end": 749.04,
+      "text": "One, divide your material",
+      "zh": ""
+    },
+    {
+      "start": 749.04,
+      "end": 751.28,
+      "text": "into eight manageable sections immediately.",
+      "zh": ""
+    },
+    {
+      "start": 751.28,
+      "end": 755.04,
+      "text": "Two, adopt the four sessions, six-hour daily structure,",
+      "zh": ""
+    },
+    {
+      "start": 755.04,
+      "end": 756.64,
+      "text": "protect your downtime first.",
+      "zh": ""
+    },
+    {
+      "start": 756.64,
+      "end": 760.24,
+      "text": "Three, progress from primary revision to nub cards,",
+      "zh": ""
+    },
+    {
+      "start": 760.24,
+      "end": 762.16,
+      "text": "moving from input to output.",
+      "zh": ""
+    },
+    {
+      "start": 762.16,
+      "end": 764.16,
+      "text": "Four, trust the know-it gremlin,",
+      "zh": ""
+    },
+    {
+      "start": 764.16,
+      "end": 766.32,
+      "text": "don't waste time reviewing what you already know.",
+      "zh": ""
+    },
+    {
+      "start": 766.32,
+      "end": 768.16,
+      "text": "And five, protect your sleep.",
+      "zh": ""
+    },
+    {
+      "start": 768.16,
+      "end": 770.72,
+      "text": "It is as important as the revision itself.",
+      "zh": ""
+    },
+    {
+      "start": 770.72,
+      "end": 772.24,
+      "text": "And a final thought for anyone listening",
+      "zh": ""
+    },
+    {
+      "start": 772.24,
+      "end": 774.56,
+      "text": "who still feels like they haven't done enough.",
+      "zh": ""
+    },
+    {
+      "start": 774.56,
+      "end": 777.6,
+      "text": "A vital insight from 14 days to exam success.",
+      "zh": ""
+    },
+    {
+      "start": 778.24,
+      "end": 781.12,
+      "text": "You probably already know 50% of this material",
+      "zh": ""
+    },
+    {
+      "start": 781.12,
+      "end": 782.72,
+      "text": "just from attending the course.",
+      "zh": ""
+    },
+    {
+      "start": 782.72,
+      "end": 785.28,
+      "text": "You only need to master another 20 to 30%",
+      "zh": ""
+    },
+    {
+      "start": 785.28,
+      "end": 786.88,
+      "text": "to get a fantastic grade.",
+      "zh": ""
+    },
+    {
+      "start": 786.88,
+      "end": 788.32,
+      "text": "Perfection is impossible,",
+      "zh": ""
+    },
+    {
+      "start": 788.32,
+      "end": 790.64,
+      "text": "and luckily it is also unnecessary.",
+      "zh": ""
+    },
+    {
+      "start": 790.64,
+      "end": 792.08,
+      "text": "You are closer than you think.",
+      "zh": ""
+    },
+    {
+      "start": 792.08,
+      "end": 793.6,
+      "text": "Here is your call to action.",
+      "zh": ""
+    },
+    {
+      "start": 793.6,
+      "end": 795.04,
+      "text": "Right now, put down your phone,",
+      "zh": ""
+    },
+    {
+      "start": 795.04,
+      "end": 796.08,
+      "text": "look at your course materials",
+      "zh": ""
+    },
+    {
+      "start": 796.08,
+      "end": 798.08,
+      "text": "because divide them into eight distinct piles",
+      "zh": ""
+    },
+    {
+      "start": 798.08,
+      "end": 799.76,
+      "text": "or list eight distinct topics.",
+      "zh": ""
+    },
+    {
+      "start": 799.76,
+      "end": 800.96,
+      "text": "That is your roadmap.",
+      "zh": ""
+    },
+    {
+      "start": 800.96,
+      "end": 802.4,
+      "text": "Start section one tomorrow.",
+      "zh": ""
+    }
+  ]
+}

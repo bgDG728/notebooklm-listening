@@ -1,0 +1,2165 @@
+{
+  "audio_file": "Q2_2025_Earnings_Decoded__AI_s_Relentless_March,_Shifting_Consu.m4a",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 5.04,
+      "text": "Welcome to the deep dive, your express lane to understanding the most important global business",
+      "zh": ""
+    },
+    {
+      "start": 5.04,
+      "end": 11.84,
+      "text": "insights. Today, we're cutting through the noise and jargon of Q2 2025 earnings calls.",
+      "zh": ""
+    },
+    {
+      "start": 11.84,
+      "end": 16.4,
+      "text": "We've looked at dozens of global companies. Our mission really is to pull out those crucial",
+      "zh": ""
+    },
+    {
+      "start": 16.4,
+      "end": 20.24,
+      "text": "nuggets of knowledge, maybe some surprising facts across all sorts of industries, tech,",
+      "zh": ""
+    },
+    {
+      "start": 20.24,
+      "end": 25.2,
+      "text": "finance, healthcare, consumer goods. You name it. The idea is you can get instantly well",
+      "zh": ""
+    },
+    {
+      "start": 25.2,
+      "end": 29.04,
+      "text": "informed about what's truly shaping our world. We're going to dive into the explosive",
+      "zh": ""
+    },
+    {
+      "start": 29.04,
+      "end": 33.28,
+      "text": "growth of AI in cloud, dissect some shifts in consumer spending, look at health breakthroughs",
+      "zh": ""
+    },
+    {
+      "start": 33.28,
+      "end": 36.88,
+      "text": "and examine energy and finance. Our goal, help you connect the dots and see what these trends",
+      "zh": ""
+    },
+    {
+      "start": 36.88,
+      "end": 41.84,
+      "text": "mean for you. So, let's just jump right in. If you had to pick like one overarching theme",
+      "zh": ""
+    },
+    {
+      "start": 41.84,
+      "end": 45.36,
+      "text": "from all these calls, what's the absolute biggest story right now?",
+      "zh": ""
+    },
+    {
+      "start": 45.36,
+      "end": 51.36,
+      "text": "Oh, without a doubt, it's the relentless march of AI and cloud infrastructure. It's",
+      "zh": ""
+    },
+    {
+      "start": 51.36,
+      "end": 55.92,
+      "text": "everywhere. We're seeing just unprecedented investment and integration, not just abstract",
+      "zh": ""
+    },
+    {
+      "start": 55.92,
+      "end": 60.72,
+      "text": "ideas, but real drivers of revenue efficiency. And the numbers back it up, right? It's not",
+      "zh": ""
+    },
+    {
+      "start": 60.72,
+      "end": 65.68,
+      "text": "just talk. You look at Alibaba, their cloud intelligence group revenue surged 26 percent",
+      "zh": ""
+    },
+    {
+      "start": 65.68,
+      "end": 72.32,
+      "text": "year over year. That's what? RMB 33.4 billion, mostly fueled by AI demand. Exactly. And they're",
+      "zh": ""
+    },
+    {
+      "start": 72.32,
+      "end": 77.76,
+      "text": "positioning themselves quite deliberately as this key enabler for other businesses,",
+      "zh": ""
+    },
+    {
+      "start": 78.4,
+      "end": 82.48,
+      "text": "especially for that post-training of proprietary AI models. Right. Like for",
+      "zh": ""
+    },
+    {
+      "start": 82.48,
+      "end": 88.56,
+      "text": "education or healthcare firms using Alibaba's open source models as a base, it naturally drives",
+      "zh": ""
+    },
+    {
+      "start": 88.56,
+      "end": 92.8,
+      "text": "their cloud platform usage. Precisely. And they expect that cloud revenue to keep growing. But,",
+      "zh": ""
+    },
+    {
+      "start": 92.8,
+      "end": 97.28,
+      "text": "you know, Alibaba's not alone here. Oracle is making some incredibly aggressive moves.",
+      "zh": ""
+    },
+    {
+      "start": 97.28,
+      "end": 100.56,
+      "text": "Oh yeah. What are they saying? They're projecting total cloud revenue growth",
+      "zh": ""
+    },
+    {
+      "start": 100.56,
+      "end": 106.48,
+      "text": "over 40 percent in fiscal 26. That's up from 24 percent this year. And cloud infrastructure",
+      "zh": ""
+    },
+    {
+      "start": 106.48,
+      "end": 112.88,
+      "text": "growth over 70 percent. 70 percent. Wow. Yeah. Their aim is number one cloud database,",
+      "zh": ""
+    },
+    {
+      "start": 112.88,
+      "end": 117.44,
+      "text": "number one cloud applications, and the number one builder of cloud infrastructure data centers.",
+      "zh": ""
+    },
+    {
+      "start": 117.44,
+      "end": 121.84,
+      "text": "They actually said they'll build more than all competitors combined. That is a bold claim.",
+      "zh": ""
+    },
+    {
+      "start": 121.84,
+      "end": 126.56,
+      "text": "How are they planning to pull that off? Well, a big piece is Oracle 23 AI. It's their AI",
+      "zh": ""
+    },
+    {
+      "start": 126.56,
+      "end": 131.28,
+      "text": "data platform. They say it's unique because it makes customer data instantly available to",
+      "zh": ""
+    },
+    {
+      "start": 131.28,
+      "end": 136.56,
+      "text": "popular LLMs. But, and this is key while maintaining privacy. Plus, they're embracing",
+      "zh": ""
+    },
+    {
+      "start": 136.56,
+      "end": 143.36,
+      "text": "multi-cloud. Their database is now an Azure Google Cloud AWS gives customers real flexibility.",
+      "zh": ""
+    },
+    {
+      "start": 143.36,
+      "end": 147.52,
+      "text": "Okay. That makes sense. Avoids lock in. Right. And what's also really interesting is their",
+      "zh": ""
+    },
+    {
+      "start": 147.52,
+      "end": 154.4,
+      "text": "integrated AI agent-based application suites. Think ERP, supply chain, HR, healthcare, banking,",
+      "zh": ""
+    },
+    {
+      "start": 154.4,
+      "end": 159.84,
+      "text": "the whole gamut. They claim no one else is trying that breadth with AI agents.",
+      "zh": ""
+    },
+    {
+      "start": 159.92,
+      "end": 165.04,
+      "text": "So, Oracle's building these integrated suites while maybe Amazon's AWS sees things a bit",
+      "zh": ""
+    },
+    {
+      "start": 165.04,
+      "end": 170.0,
+      "text": "differently. They mentioned usage is still in an earlier stage for AI compared to established",
+      "zh": ""
+    },
+    {
+      "start": 170.0,
+      "end": 174.08,
+      "text": "apps. Yeah. It suggests that, you know, while lots of people are experimenting on AWS AI services,",
+      "zh": ""
+    },
+    {
+      "start": 174.08,
+      "end": 178.24,
+      "text": "the truly massive expanse of use cases, maybe they're still taking shape. It's a",
+      "zh": ""
+    },
+    {
+      "start": 178.24,
+      "end": 182.0,
+      "text": "different read on the maturity curve. And then you have Alphabet, Google's parent,",
+      "zh": ""
+    },
+    {
+      "start": 182.0,
+      "end": 186.48,
+      "text": "investing heavily in what they call agentic capabilities. AI agents, they can",
+      "zh": ""
+    },
+    {
+      "start": 186.48,
+      "end": 191.36,
+      "text": "chain events together for complex tasks. They're pretty upfront about the hurdles, though,",
+      "zh": ""
+    },
+    {
+      "start": 191.36,
+      "end": 194.64,
+      "text": "reliability, that compounding latency issue, cost control.",
+      "zh": ""
+    },
+    {
+      "start": 194.64,
+      "end": 195.68,
+      "text": "Sounds tricky.",
+      "zh": ""
+    },
+    {
+      "start": 195.68,
+      "end": 199.92,
+      "text": "It is. But they say they're making robust progress. Believe they're at the frontier.",
+      "zh": ""
+    },
+    {
+      "start": 199.92,
+      "end": 203.28,
+      "text": "It really highlights the massive engineering challenge behind the vision.",
+      "zh": ""
+    },
+    {
+      "start": 203.28,
+      "end": 207.76,
+      "text": "And the sheer cost involved underscores this AI race. Look at NVIDIA.",
+      "zh": ""
+    },
+    {
+      "start": 207.76,
+      "end": 211.76,
+      "text": "Oh, absolutely. NVIDIA now calls itself an AI infrastructure company.",
+      "zh": ""
+    },
+    {
+      "start": 211.76,
+      "end": 217.28,
+      "text": "They're projecting a, get this, $3 to $4 trillion market over the next five years,",
+      "zh": ""
+    },
+    {
+      "start": 217.28,
+      "end": 220.72,
+      "text": "just for this kind of infrastructure. Trillion. That's astronomical.",
+      "zh": ""
+    },
+    {
+      "start": 220.72,
+      "end": 226.0,
+      "text": "It is. And an AI supercomputer, like their upcoming Ruben system, isn't just one chip.",
+      "zh": ""
+    },
+    {
+      "start": 226.0,
+      "end": 230.96,
+      "text": "It's like six different types of chips, hundreds of thousands of GPU compute notes,",
+      "zh": ""
+    },
+    {
+      "start": 230.96,
+      "end": 233.28,
+      "text": "massive scale. So it's not just about the GPUs anymore.",
+      "zh": ""
+    },
+    {
+      "start": 233.28,
+      "end": 236.56,
+      "text": "Not at all. And NVIDIA stress performance per watt. It's critical.",
+      "zh": ""
+    },
+    {
+      "start": 236.56,
+      "end": 238.4,
+      "text": "Yeah. Because data centers have power limits, right?",
+      "zh": ""
+    },
+    {
+      "start": 238.4,
+      "end": 243.2,
+      "text": "So higher efficiency directly means more revenue you can generate from that fixed capacity.",
+      "zh": ""
+    },
+    {
+      "start": 243.2,
+      "end": 247.52,
+      "text": "That makes the hardware innovation absolutely crucial. And speaking of hardware constraints,",
+      "zh": ""
+    },
+    {
+      "start": 247.52,
+      "end": 253.28,
+      "text": "TSMC. Yeah, the chip giant. They confirmed capacity for their advanced three nanometer and",
+      "zh": ""
+    },
+    {
+      "start": 253.28,
+      "end": 259.36,
+      "text": "five nanometer nodes is very tight and likely to stay that way for a couple of years.",
+      "zh": ""
+    },
+    {
+      "start": 260.08,
+      "end": 264.96,
+      "text": "Demand from AI products is just huge, especially as things transition from four nanometer to",
+      "zh": ""
+    },
+    {
+      "start": 264.96,
+      "end": 267.04,
+      "text": "three nanometer. So they're building more capacity.",
+      "zh": ""
+    },
+    {
+      "start": 267.04,
+      "end": 272.4,
+      "text": "Actively. They're planning COAS capacity expansion that's the advanced packaging needed for AI",
+      "zh": ""
+    },
+    {
+      "start": 272.4,
+      "end": 279.28,
+      "text": "accelerators for both 2025 and 2026. The bottleneck is real, but they're working hard to widen it.",
+      "zh": ""
+    },
+    {
+      "start": 279.28,
+      "end": 283.28,
+      "text": "It's clear the foundations are being laid at an incredible speed. Cisco, for instance,",
+      "zh": ""
+    },
+    {
+      "start": 283.28,
+      "end": 287.52,
+      "text": "saw AI infrastructure orders from their big web scale customers more than double their",
+      "zh": ""
+    },
+    {
+      "start": 287.52,
+      "end": 292.0,
+      "text": "original target this fiscal year. Yeah, their CEO called AI a major tailwind,",
+      "zh": ""
+    },
+    {
+      "start": 292.0,
+      "end": 296.08,
+      "text": "driving a whole architectural shift. They see opportunity everywhere, web scale, enterprise",
+      "zh": ""
+    },
+    {
+      "start": 296.08,
+      "end": 300.88,
+      "text": "adoption, sovereign AI, these neoclouds, and that emerging agentic phase we talked about.",
+      "zh": ""
+    },
+    {
+      "start": 300.88,
+      "end": 305.28,
+      "text": "And it connects directly to how businesses actually run. SAP is embedding AI everywhere",
+      "zh": ""
+    },
+    {
+      "start": 305.28,
+      "end": 310.72,
+      "text": "with Jule, their generative AI assistant. Right. They expect AI to automate tasks like",
+      "zh": ""
+    },
+    {
+      "start": 310.72,
+      "end": 314.16,
+      "text": "customer onboarding, patching systems, solving support tickets,",
+      "zh": ""
+    },
+    {
+      "start": 314.16,
+      "end": 319.28,
+      "text": "freeing up people, boosting productivity. Salesforce seems to be proving that out already",
+      "zh": ""
+    },
+    {
+      "start": 319.28,
+      "end": 324.32,
+      "text": "with Agent Force. That's their digital labor platform. It's already got over 8,000 deals in just",
+      "zh": ""
+    },
+    {
+      "start": 324.32,
+      "end": 330.16,
+      "text": "two quarters since launch. Pretty impressive update. And the impact. They said it's handling 750,000",
+      "zh": ""
+    },
+    {
+      "start": 330.16,
+      "end": 336.08,
+      "text": "customer support cases, cutting case volume by 7% year over year. Which allowed them to redeploy",
+      "zh": ""
+    },
+    {
+      "start": 336.08,
+      "end": 342.48,
+      "text": "500 support staff into higher impact data and AI roles and save $50 million annually.",
+      "zh": ""
+    },
+    {
+      "start": 342.48,
+      "end": 347.6,
+      "text": "That's a direct, measurable, bottom line impact and a workforce strategy shift, really.",
+      "zh": ""
+    },
+    {
+      "start": 347.6,
+      "end": 351.92,
+      "text": "Absolutely. It shows AI isn't just about efficiency. It's reshaping jobs.",
+      "zh": ""
+    },
+    {
+      "start": 351.92,
+      "end": 356.08,
+      "text": "And it's moving beyond the enterprise too. Look at Samsung with Galaxy AI.",
+      "zh": ""
+    },
+    {
+      "start": 356.08,
+      "end": 359.76,
+      "text": "Right. They're pushing for more personalized, intuitive experience,",
+      "zh": ""
+    },
+    {
+      "start": 359.76,
+      "end": 364.96,
+      "text": "moving from app-centric to agent-centric and from touch to multimodal interfaces.",
+      "zh": ""
+    },
+    {
+      "start": 364.96,
+      "end": 369.2,
+      "text": "They're collaborating with Google, integrating things like cross-app interfaces in Gemini",
+      "zh": ""
+    },
+    {
+      "start": 369.2,
+      "end": 373.68,
+      "text": "Live for real-time screen sharing. It's about making AI more seamless in daily life.",
+      "zh": ""
+    },
+    {
+      "start": 373.68,
+      "end": 375.76,
+      "text": "And then there's Meta, looking even further ahead.",
+      "zh": ""
+    },
+    {
+      "start": 375.76,
+      "end": 378.8,
+      "text": "Yeah, they reported seeing their AI systems start improving themselves.",
+      "zh": ""
+    },
+    {
+      "start": 378.8,
+      "end": 382.96,
+      "text": "Slowly for now, they said, but undeniably. And their CEO's vision.",
+      "zh": ""
+    },
+    {
+      "start": 382.96,
+      "end": 388.56,
+      "text": "He believed developing superintelligence, AI surpassing human intelligence in every way,",
+      "zh": ""
+    },
+    {
+      "start": 388.56,
+      "end": 393.84,
+      "text": "is now in sight. Their goal is personal superintelligence for everyone. Big vision stuff.",
+      "zh": ""
+    },
+    {
+      "start": 393.84,
+      "end": 398.72,
+      "text": "Well, that's maybe further out. IBM is seeing results now. Their data revenue grew 7%.",
+      "zh": ""
+    },
+    {
+      "start": 399.36,
+      "end": 404.96,
+      "text": "Mostly from AI offerings. Automation up 14%. Helped by the Hashicorp acquisition.",
+      "zh": ""
+    },
+    {
+      "start": 404.96,
+      "end": 409.76,
+      "text": "Just shows the sheer breadth, doesn't it? From foundational chips to superintelligence visions,",
+      "zh": ""
+    },
+    {
+      "start": 409.76,
+      "end": 414.64,
+      "text": "AI is touching every part of the tech world. Okay, so while tech is building that AI future,",
+      "zh": ""
+    },
+    {
+      "start": 414.64,
+      "end": 420.0,
+      "text": "let's shift gears. Let's talk about the consumer. How are people actually behaving right now?",
+      "zh": ""
+    },
+    {
+      "start": 420.0,
+      "end": 424.24,
+      "text": "Yeah, it's definitely interesting. We're seeing some maybe contradictory signals and spending",
+      "zh": ""
+    },
+    {
+      "start": 424.24,
+      "end": 428.48,
+      "text": "habits, what people see as value, how digital is changing things. It's a bit nuanced.",
+      "zh": ""
+    },
+    {
+      "start": 428.48,
+      "end": 432.08,
+      "text": "Look at Home Depot. Sales were up. US Comp sells up a bit too.",
+      "zh": ""
+    },
+    {
+      "start": 432.08,
+      "end": 435.2,
+      "text": "Okay, so some growth. Yeah, but what's interesting is how",
+      "zh": ""
+    },
+    {
+      "start": 435.2,
+      "end": 439.76,
+      "text": "they saw customers doing more smaller home improvement projects. But at the same time,",
+      "zh": ""
+    },
+    {
+      "start": 439.76,
+      "end": 445.84,
+      "text": "the average ticket price went up. How does that work? Driven by a 2.6% jump in sales of items",
+      "zh": ""
+    },
+    {
+      "start": 445.84,
+      "end": 451.36,
+      "text": "over $1,000. So it suggests people are maybe cautious doing quick wins, but also willing",
+      "zh": ""
+    },
+    {
+      "start": 451.36,
+      "end": 456.96,
+      "text": "to spend on bigger ticket quality items, investing in value, perhaps. Interesting.",
+      "zh": ""
+    },
+    {
+      "start": 456.96,
+      "end": 461.68,
+      "text": "A sort of split personality in spending, McDonald's saw global comparable sales",
+      "zh": ""
+    },
+    {
+      "start": 461.68,
+      "end": 467.12,
+      "text": "up nearly 4%. And loyalty is huge to them in the US. A quarter of their business comes from",
+      "zh": ""
+    },
+    {
+      "start": 467.12,
+      "end": 472.72,
+      "text": "loyalty members. And those members visit way more often, like 2.5 times more. Loyalty pays off.",
+      "zh": ""
+    },
+    {
+      "start": 472.72,
+      "end": 477.28,
+      "text": "Definitely. Their McValue programs, like the $5 meal deal, are working. But they did",
+      "zh": ""
+    },
+    {
+      "start": 477.28,
+      "end": 482.88,
+      "text": "flag an issue. Core menu pricing for non-loyalty folks. Combo meals over $10",
+      "zh": ""
+    },
+    {
+      "start": 482.88,
+      "end": 486.0,
+      "text": "can hurt that value perception. It's a constant balancing act.",
+      "zh": ""
+    },
+    {
+      "start": 486.0,
+      "end": 489.92,
+      "text": "Coca-Cola seems to be managing that balance. In Latin America, volume dips slightly,",
+      "zh": ""
+    },
+    {
+      "start": 489.92,
+      "end": 494.88,
+      "text": "but price mix was up 15%. 15%. Through pricing actions and favorable mix,",
+      "zh": ""
+    },
+    {
+      "start": 494.88,
+      "end": 498.96,
+      "text": "they're expecting 5%, 6% organic revenue growth for the full year,",
+      "zh": ""
+    },
+    {
+      "start": 498.96,
+      "end": 503.6,
+      "text": "so they seem confident in their strategy. Meanwhile, Walmart is just crushing it on",
+      "zh": ""
+    },
+    {
+      "start": 503.6,
+      "end": 509.44,
+      "text": "value and convenience. US e-commerce sales up 26%. Delivery from stores up almost 50%.",
+      "zh": ""
+    },
+    {
+      "start": 510.0,
+      "end": 513.2,
+      "text": "And fast delivery too, right? Yeah, about a third of those deliveries were in three",
+      "zh": ""
+    },
+    {
+      "start": 513.2,
+      "end": 517.44,
+      "text": "hours or less. Incredible speed. They said AI isn't really driving top-line sales yet,",
+      "zh": ""
+    },
+    {
+      "start": 517.44,
+      "end": 522.16,
+      "text": "but they're focused on value over 7,000 rollbacks, way up from last quarter.",
+      "zh": ""
+    },
+    {
+      "start": 522.16,
+      "end": 526.32,
+      "text": "Clearly doubling down on price leadership. But it's not all about discounts, is it?",
+      "zh": ""
+    },
+    {
+      "start": 526.32,
+      "end": 530.48,
+      "text": "Luxury seems okay. Not at all. Hermes reported growth everywhere.",
+      "zh": ""
+    },
+    {
+      "start": 530.48,
+      "end": 536.56,
+      "text": "Japan up 16%. America's up 12%. They credit loyal, local clients in their value strategy,",
+      "zh": ""
+    },
+    {
+      "start": 536.56,
+      "end": 539.52,
+      "text": "which for them means, you know, craftsmanship, exclusivity.",
+      "zh": ""
+    },
+    {
+      "start": 539.52,
+      "end": 543.76,
+      "text": "A different kind of value. And L'Oreal is adapting too. Skincare face some headwinds,",
+      "zh": ""
+    },
+    {
+      "start": 543.76,
+      "end": 545.92,
+      "text": "especially in North Asia. So what are they doing?",
+      "zh": ""
+    },
+    {
+      "start": 545.92,
+      "end": 550.48,
+      "text": "Acquisitions Medic, Dr. G, and rolling out the affordable Mixa brand in Europe.",
+      "zh": ""
+    },
+    {
+      "start": 551.2,
+      "end": 556.64,
+      "text": "But here's the AI link again. L'Oreal is using AI heavily in R&D. Predictive formulation,",
+      "zh": ""
+    },
+    {
+      "start": 556.64,
+      "end": 560.24,
+      "text": "scanning molecules, building an AI moat for future innovation.",
+      "zh": ""
+    },
+    {
+      "start": 560.24,
+      "end": 565.44,
+      "text": "Fascinating, even in cosmetics and P&G. Still commanding pricing power.",
+      "zh": ""
+    },
+    {
+      "start": 565.44,
+      "end": 569.68,
+      "text": "Seems so. They operate in daily use categories where performance drives choice, right?",
+      "zh": ""
+    },
+    {
+      "start": 570.56,
+      "end": 574.32,
+      "text": "They said price has been a positive growth driver for 19 in the last 20 years.",
+      "zh": ""
+    },
+    {
+      "start": 574.32,
+      "end": 576.24,
+      "text": "Wow. Consistency.",
+      "zh": ""
+    },
+    {
+      "start": 576.24,
+      "end": 580.4,
+      "text": "An ongoing innovation-tied Evo, new Oral-B toothbrushes, supports that.",
+      "zh": ""
+    },
+    {
+      "start": 580.96,
+      "end": 585.44,
+      "text": "Even with tariffs hitting some skews, the overall price increase averages out around",
+      "zh": ""
+    },
+    {
+      "start": 585.44,
+      "end": 588.16,
+      "text": "2.5%, kind of in line with inflation.",
+      "zh": ""
+    },
+    {
+      "start": 588.16,
+      "end": 591.52,
+      "text": "Okay, and one last consumer shift, Philip Morris International.",
+      "zh": ""
+    },
+    {
+      "start": 591.52,
+      "end": 594.48,
+      "text": "Yeah, this is a big one. Their smoke-free products are just exploding.",
+      "zh": ""
+    },
+    {
+      "start": 594.48,
+      "end": 599.2,
+      "text": "In Japan, 10 million users. IQS is nearly half the total nicotine volume there now.",
+      "zh": ""
+    },
+    {
+      "start": 599.2,
+      "end": 600.08,
+      "text": "And in the US.",
+      "zh": ""
+    },
+    {
+      "start": 600.08,
+      "end": 605.28,
+      "text": "ZYN saw huge growth, over 36% in June-July, growing with the market.",
+      "zh": ""
+    },
+    {
+      "start": 605.28,
+      "end": 609.6,
+      "text": "And crucially, the smoke-free business has a gross margin around 70% higher",
+      "zh": ""
+    },
+    {
+      "start": 609.6,
+      "end": 612.8,
+      "text": "than their traditional cigarette business. That's a major strategic win.",
+      "zh": ""
+    },
+    {
+      "start": 612.8,
+      "end": 615.04,
+      "text": "Yeah. Okay, from the consumer's wallet, let's pivot.",
+      "zh": ""
+    },
+    {
+      "start": 615.04,
+      "end": 619.28,
+      "text": "The financial sector. Banks, payments. What's the pulse there?",
+      "zh": ""
+    },
+    {
+      "start": 619.28,
+      "end": 621.76,
+      "text": "Credit, interest rates, digital transactions.",
+      "zh": ""
+    },
+    {
+      "start": 621.76,
+      "end": 624.56,
+      "text": "Well, it's a bit of a mix again. Solid performance in some areas,",
+      "zh": ""
+    },
+    {
+      "start": 624.56,
+      "end": 627.68,
+      "text": "but ongoing challenges too. Cheaply Morgan Chase, for instance.",
+      "zh": ""
+    },
+    {
+      "start": 627.68,
+      "end": 630.8,
+      "text": "Net income up 13%. Revenue up 9%.",
+      "zh": ""
+    },
+    {
+      "start": 630.8,
+      "end": 633.12,
+      "text": "Market revenue looks strong up 15%.",
+      "zh": ""
+    },
+    {
+      "start": 633.12,
+      "end": 634.24,
+      "text": "But credit losses.",
+      "zh": ""
+    },
+    {
+      "start": 634.24,
+      "end": 638.96,
+      "text": "Yeah, they set aside $2.8 billion for provisions, mostly in card services.",
+      "zh": ""
+    },
+    {
+      "start": 638.96,
+      "end": 641.04,
+      "text": "Net charge-offs were $2.4 billion.",
+      "zh": ""
+    },
+    {
+      "start": 641.84,
+      "end": 644.56,
+      "text": "And Jamie Dimon had some strong words for regulators, didn't he?",
+      "zh": ""
+    },
+    {
+      "start": 644.56,
+      "end": 648.48,
+      "text": "He really did. Called for simplification, transparency,",
+      "zh": ""
+    },
+    {
+      "start": 648.48,
+      "end": 654.56,
+      "text": "making things cheaper, safer. Criticized the overlap between rules like SLR, G-Sci-Fi,",
+      "zh": ""
+    },
+    {
+      "start": 655.2,
+      "end": 657.2,
+      "text": "C-Share-R-Arrel, Basel-3.",
+      "zh": ""
+    },
+    {
+      "start": 657.2,
+      "end": 658.8,
+      "text": "He mentioned C-R-Arenus.",
+      "zh": ""
+    },
+    {
+      "start": 658.8,
+      "end": 662.4,
+      "text": "Yeah, suggesting the stress test might actually be holding back small business",
+      "zh": ""
+    },
+    {
+      "start": 662.4,
+      "end": 668.24,
+      "text": "lending. It really highlights that tension between regulation and market fluidity.",
+      "zh": ""
+    },
+    {
+      "start": 668.24,
+      "end": 671.76,
+      "text": "A key point. How about Bank of America? Similar picture on credit.",
+      "zh": ""
+    },
+    {
+      "start": 671.76,
+      "end": 676.08,
+      "text": "Provisions for credit losses were up slightly, but net charge-offs held steady year over",
+      "zh": ""
+    },
+    {
+      "start": 676.08,
+      "end": 680.32,
+      "text": "year. And their net interest income increased, so the high-rate environment is still helping",
+      "zh": ""
+    },
+    {
+      "start": 680.32,
+      "end": 681.52,
+      "text": "their core lending business.",
+      "zh": ""
+    },
+    {
+      "start": 681.52,
+      "end": 683.92,
+      "text": "And Berkshire Hathaway. Always an interesting one.",
+      "zh": ""
+    },
+    {
+      "start": 683.92,
+      "end": 687.2,
+      "text": "Their overall revenues were down slightly, net earnings significantly lower,",
+      "zh": ""
+    },
+    {
+      "start": 687.2,
+      "end": 690.64,
+      "text": "but that was mainly due to swings in investment gains losses.",
+      "zh": ""
+    },
+    {
+      "start": 690.64,
+      "end": 694.64,
+      "text": "Equity investments showed that volatility a big loss noted for Kraft Heinz,",
+      "zh": ""
+    },
+    {
+      "start": 694.64,
+      "end": 696.16,
+      "text": "but a gain for Occidental.",
+      "zh": ""
+    },
+    {
+      "start": 696.16,
+      "end": 701.36,
+      "text": "So diversification, doing its job, smoothing things somewhat, any share buybacks?",
+      "zh": ""
+    },
+    {
+      "start": 701.36,
+      "end": 703.84,
+      "text": "No, none reported in the first half of 2025.",
+      "zh": ""
+    },
+    {
+      "start": 704.48,
+      "end": 708.88,
+      "text": "And they highlighted ongoing legal challenges, wildfires involving Pacific Corps,",
+      "zh": ""
+    },
+    {
+      "start": 708.88,
+      "end": 712.24,
+      "text": "and that big verdict against their real estate brokerage over commissions.",
+      "zh": ""
+    },
+    {
+      "start": 712.24,
+      "end": 714.24,
+      "text": "Show us the diverse risks even they face.",
+      "zh": ""
+    },
+    {
+      "start": 714.24,
+      "end": 716.88,
+      "text": "Okay, shifting to payments tech. Mastercard.",
+      "zh": ""
+    },
+    {
+      "start": 716.88,
+      "end": 719.84,
+      "text": "They're pushing contactless tap to pay everywhere.",
+      "zh": ""
+    },
+    {
+      "start": 719.84,
+      "end": 722.96,
+      "text": "Shanghai Metro, 60 other transport operators globally.",
+      "zh": ""
+    },
+    {
+      "start": 723.68,
+      "end": 725.6,
+      "text": "And their view on stablecoins is interesting.",
+      "zh": ""
+    },
+    {
+      "start": 725.6,
+      "end": 726.4,
+      "text": "What's their take?",
+      "zh": ""
+    },
+    {
+      "start": 726.4,
+      "end": 731.84,
+      "text": "They see them as additive, providing on-off ramps from fiat currency, interoperability,",
+      "zh": ""
+    },
+    {
+      "start": 731.92,
+      "end": 735.12,
+      "text": "reach, trust for specific use cases.",
+      "zh": ""
+    },
+    {
+      "start": 735.12,
+      "end": 736.64,
+      "text": "It's about integrating, not competing.",
+      "zh": ""
+    },
+    {
+      "start": 736.64,
+      "end": 737.36,
+      "text": "And using AI.",
+      "zh": ""
+    },
+    {
+      "start": 737.36,
+      "end": 738.48,
+      "text": "Oh yeah, big time.",
+      "zh": ""
+    },
+    {
+      "start": 738.48,
+      "end": 741.28,
+      "text": "Using generative AI and their Decision Intelligence Pro",
+      "zh": ""
+    },
+    {
+      "start": 741.28,
+      "end": 743.52,
+      "text": "to move from preventing fraud to predicting it.",
+      "zh": ""
+    },
+    {
+      "start": 743.52,
+      "end": 745.84,
+      "text": "That's a significant step up in security strategy.",
+      "zh": ""
+    },
+    {
+      "start": 745.84,
+      "end": 747.92,
+      "text": "Predicting fraud, powerful stuff.",
+      "zh": ""
+    },
+    {
+      "start": 747.92,
+      "end": 750.8,
+      "text": "Visa thinking along similar lines with stablecoins.",
+      "zh": ""
+    },
+    {
+      "start": 750.8,
+      "end": 751.6,
+      "text": "Very similar.",
+      "zh": ""
+    },
+    {
+      "start": 751.6,
+      "end": 754.0,
+      "text": "They see stablecoins solving real problems,",
+      "zh": ""
+    },
+    {
+      "start": 754.0,
+      "end": 758.24,
+      "text": "especially in emerging markets with volatile currencies or limited financial access.",
+      "zh": ""
+    },
+    {
+      "start": 759.2,
+      "end": 763.2,
+      "text": "Visa's role. Providing the trust, standards, connectivity scale.",
+      "zh": ""
+    },
+    {
+      "start": 763.84,
+      "end": 766.72,
+      "text": "The infrastructure layer for this evolving ecosystem.",
+      "zh": ""
+    },
+    {
+      "start": 766.72,
+      "end": 769.6,
+      "text": "They also reported strong cross-border volume growth,",
+      "zh": ""
+    },
+    {
+      "start": 769.6,
+      "end": 772.4,
+      "text": "with Visa Direct becoming a key global remittance tool.",
+      "zh": ""
+    },
+    {
+      "start": 772.4,
+      "end": 774.72,
+      "text": "They're embedding themselves in these new flows.",
+      "zh": ""
+    },
+    {
+      "start": 774.72,
+      "end": 776.4,
+      "text": "And briefly, Bank of China.",
+      "zh": ""
+    },
+    {
+      "start": 776.4,
+      "end": 781.36,
+      "text": "They reported solid loan growth up nearly 7% to RMB $23 trillion.",
+      "zh": ""
+    },
+    {
+      "start": 781.36,
+      "end": 785.84,
+      "text": "Emphasize their role as a state-owned bank supporting national strategies and the real economy.",
+      "zh": ""
+    },
+    {
+      "start": 786.64,
+      "end": 788.8,
+      "text": "All right, let's move into healthcare and pharma.",
+      "zh": ""
+    },
+    {
+      "start": 788.8,
+      "end": 790.08,
+      "text": "This sector is always fascinating.",
+      "zh": ""
+    },
+    {
+      "start": 790.08,
+      "end": 792.72,
+      "text": "Drug developments, devices, market expansion.",
+      "zh": ""
+    },
+    {
+      "start": 792.72,
+      "end": 794.16,
+      "text": "R&D seems to be paying off.",
+      "zh": ""
+    },
+    {
+      "start": 794.16,
+      "end": 795.68,
+      "text": "It's definitely seeing some big results.",
+      "zh": ""
+    },
+    {
+      "start": 795.68,
+      "end": 796.72,
+      "text": "Abview, for example.",
+      "zh": ""
+    },
+    {
+      "start": 796.72,
+      "end": 798.48,
+      "text": "Net revenues grew 6.5%.",
+      "zh": ""
+    },
+    {
+      "start": 798.48,
+      "end": 800.96,
+      "text": "Operationally, they raised their full-year guidance.",
+      "zh": ""
+    },
+    {
+      "start": 800.96,
+      "end": 805.6,
+      "text": "SkyRizzy and Renflexes are on track for over $25 billion combined this year.",
+      "zh": ""
+    },
+    {
+      "start": 805.6,
+      "end": 807.12,
+      "text": "$25 billion? That's huge.",
+      "zh": ""
+    },
+    {
+      "start": 807.12,
+      "end": 807.52,
+      "text": "Yeah.",
+      "zh": ""
+    },
+    {
+      "start": 807.52,
+      "end": 809.12,
+      "text": "Exceeding expectations.",
+      "zh": ""
+    },
+    {
+      "start": 809.12,
+      "end": 813.44,
+      "text": "Yeah, and their neuroscience portfolio also saw strong double-digit growth,",
+      "zh": ""
+    },
+    {
+      "start": 813.44,
+      "end": 816.0,
+      "text": "driven by VILEV and migraine treatments.",
+      "zh": ""
+    },
+    {
+      "start": 816.0,
+      "end": 819.76,
+      "text": "Plus, they're actively doing deals, collaborations, in licensing,",
+      "zh": ""
+    },
+    {
+      "start": 820.4,
+      "end": 821.76,
+      "text": "really building out that pipeline.",
+      "zh": ""
+    },
+    {
+      "start": 821.76,
+      "end": 823.6,
+      "text": "It's that dual strategy, isn't it?",
+      "zh": ""
+    },
+    {
+      "start": 823.6,
+      "end": 827.6,
+      "text": "Maximize the current blockbusters while aggressively fueling the future pipeline.",
+      "zh": ""
+    },
+    {
+      "start": 827.6,
+      "end": 830.08,
+      "text": "Abbots doing impressive stuff in medical devices, too.",
+      "zh": ""
+    },
+    {
+      "start": 830.08,
+      "end": 830.72,
+      "text": "Like what?",
+      "zh": ""
+    },
+    {
+      "start": 830.72,
+      "end": 834.48,
+      "text": "Electrophysiology saw double-digit growth, launched a new catheter,",
+      "zh": ""
+    },
+    {
+      "start": 835.04,
+      "end": 839.04,
+      "text": "structural heart up 12%, driven by several key products.",
+      "zh": ""
+    },
+    {
+      "start": 839.04,
+      "end": 842.96,
+      "text": "Their cardiac rhythm management business is showing very sustainable growth.",
+      "zh": ""
+    },
+    {
+      "start": 842.96,
+      "end": 844.4,
+      "text": "And developing new tech.",
+      "zh": ""
+    },
+    {
+      "start": 844.4,
+      "end": 845.28,
+      "text": "Absolutely.",
+      "zh": ""
+    },
+    {
+      "start": 845.28,
+      "end": 849.92,
+      "text": "A next-gen AVER device with 25% longer battery life is in the works.",
+      "zh": ""
+    },
+    {
+      "start": 849.92,
+      "end": 853.36,
+      "text": "Parking a pivotal trial for a new pacing product in 2026.",
+      "zh": ""
+    },
+    {
+      "start": 853.36,
+      "end": 856.16,
+      "text": "Plus, they're rolling out products globally in 50 countries,",
+      "zh": ""
+    },
+    {
+      "start": 856.16,
+      "end": 858.96,
+      "text": "and still looking at M&A, a broad growth strategy.",
+      "zh": ""
+    },
+    {
+      "start": 858.96,
+      "end": 860.88,
+      "text": "Johnson & Johnson also showing breath.",
+      "zh": ""
+    },
+    {
+      "start": 860.88,
+      "end": 863.36,
+      "text": "Strong growth in both innovative medicine and med tech.",
+      "zh": ""
+    },
+    {
+      "start": 863.36,
+      "end": 865.84,
+      "text": "And lots of positive data readouts, right?",
+      "zh": ""
+    },
+    {
+      "start": 865.84,
+      "end": 867.2,
+      "text": "Across a whole range of conditions,",
+      "zh": ""
+    },
+    {
+      "start": 867.2,
+      "end": 870.4,
+      "text": "myasthenia gravis, multiple myeloma, arthritis, cancer.",
+      "zh": ""
+    },
+    {
+      "start": 870.4,
+      "end": 874.48,
+      "text": "Plus, they hit a milestone with their OTVAT robotic surgical system.",
+      "zh": ""
+    },
+    {
+      "start": 874.48,
+      "end": 877.84,
+      "text": "First cases completed, more automation coming to the OR.",
+      "zh": ""
+    },
+    {
+      "start": 877.84,
+      "end": 879.84,
+      "text": "Yeah, that's a trend to watch.",
+      "zh": ""
+    },
+    {
+      "start": 879.84,
+      "end": 882.4,
+      "text": "But maybe the biggest buzz is around obesity care.",
+      "zh": ""
+    },
+    {
+      "start": 882.4,
+      "end": 884.0,
+      "text": "Lilly reported strong results.",
+      "zh": ""
+    },
+    {
+      "start": 884.0,
+      "end": 885.12,
+      "text": "Net income up 32%.",
+      "zh": ""
+    },
+    {
+      "start": 885.6,
+      "end": 887.12,
+      "text": "And focusing R&D there?",
+      "zh": ""
+    },
+    {
+      "start": 887.12,
+      "end": 887.92,
+      "text": "Definitely.",
+      "zh": ""
+    },
+    {
+      "start": 887.92,
+      "end": 891.84,
+      "text": "While overall R&D costs dipped due to a prior impairment,",
+      "zh": ""
+    },
+    {
+      "start": 891.84,
+      "end": 895.84,
+      "text": "late-stage trial activity increased, primarily focused on obesity.",
+      "zh": ""
+    },
+    {
+      "start": 895.84,
+      "end": 899.6,
+      "text": "They're advancing amicretin, both subcutaneous and oral forms,",
+      "zh": ""
+    },
+    {
+      "start": 899.6,
+      "end": 901.12,
+      "text": "into phase three next year.",
+      "zh": ""
+    },
+    {
+      "start": 901.12,
+      "end": 903.68,
+      "text": "And Novo Nordisk, they're the other big player here.",
+      "zh": ""
+    },
+    {
+      "start": 903.68,
+      "end": 904.56,
+      "text": "Dominant, really.",
+      "zh": ""
+    },
+    {
+      "start": 904.56,
+      "end": 908.32,
+      "text": "The global branded obesity market grew 141% in volume.",
+      "zh": ""
+    },
+    {
+      "start": 908.32,
+      "end": 911.04,
+      "text": "Novo's obesity care sales surged 58%.",
+      "zh": ""
+    },
+    {
+      "start": 911.04,
+      "end": 913.6,
+      "text": "Like Lilly, they're also advancing amicretin to phase three.",
+      "zh": ""
+    },
+    {
+      "start": 913.6,
+      "end": 915.2,
+      "text": "The demand must be incredible.",
+      "zh": ""
+    },
+    {
+      "start": 915.2,
+      "end": 917.04,
+      "text": "So much so, they're committing massive capital,",
+      "zh": ""
+    },
+    {
+      "start": 917.04,
+      "end": 921.36,
+      "text": "DKK, 65 billion in 2025, just to expand manufacturing capacity.",
+      "zh": ""
+    },
+    {
+      "start": 921.36,
+      "end": 923.04,
+      "text": "Building out the whole supply chain.",
+      "zh": ""
+    },
+    {
+      "start": 923.04,
+      "end": 924.8,
+      "text": "Ingredients, production, packaging.",
+      "zh": ""
+    },
+    {
+      "start": 924.8,
+      "end": 926.32,
+      "text": "It's a huge bet on sustained growth.",
+      "zh": ""
+    },
+    {
+      "start": 926.32,
+      "end": 928.72,
+      "text": "Wow. Roche also showing growth in pharma.",
+      "zh": ""
+    },
+    {
+      "start": 928.72,
+      "end": 931.28,
+      "text": "Yep, pharma division sales up 10%,",
+      "zh": ""
+    },
+    {
+      "start": 931.28,
+      "end": 934.72,
+      "text": "driven by strong performers like Phezgos, Aler, Hemlibra.",
+      "zh": ""
+    },
+    {
+      "start": 934.72,
+      "end": 938.32,
+      "text": "Diagnostics was stable, absorbing some pricing pressure in China.",
+      "zh": ""
+    },
+    {
+      "start": 938.32,
+      "end": 941.84,
+      "text": "They're also investing heavily in R&D breast cancer, obesity,",
+      "zh": ""
+    },
+    {
+      "start": 941.84,
+      "end": 944.48,
+      "text": "hypertension treatments, plus computational biology",
+      "zh": ""
+    },
+    {
+      "start": 944.48,
+      "end": 946.88,
+      "text": "and human model systems for early research.",
+      "zh": ""
+    },
+    {
+      "start": 946.88,
+      "end": 949.44,
+      "text": "Looking for those selective high-impact bets.",
+      "zh": ""
+    },
+    {
+      "start": 949.44,
+      "end": 952.96,
+      "text": "And lastly, in Health United Health Group, any major news?",
+      "zh": ""
+    },
+    {
+      "start": 952.96,
+      "end": 954.8,
+      "text": "More about focus and leadership.",
+      "zh": ""
+    },
+    {
+      "start": 954.8,
+      "end": 956.96,
+      "text": "Refocusing on performance discipline.",
+      "zh": ""
+    },
+    {
+      "start": 956.96,
+      "end": 957.84,
+      "text": "Bias for action.",
+      "zh": ""
+    },
+    {
+      "start": 958.48,
+      "end": 961.04,
+      "text": "Some key leadership changes announced at Optum,",
+      "zh": ""
+    },
+    {
+      "start": 961.04,
+      "end": 963.36,
+      "text": "aiming to re-energize product development.",
+      "zh": ""
+    },
+    {
+      "start": 963.36,
+      "end": 965.2,
+      "text": "Okay, let's shift to our final sectors.",
+      "zh": ""
+    },
+    {
+      "start": 965.2,
+      "end": 967.36,
+      "text": "Energy, industrials, automotive.",
+      "zh": ""
+    },
+    {
+      "start": 967.36,
+      "end": 970.4,
+      "text": "Core industries navigating some unique dynamics, supply chains,",
+      "zh": ""
+    },
+    {
+      "start": 970.4,
+      "end": 972.0,
+      "text": "and new tech-like autonomy.",
+      "zh": ""
+    },
+    {
+      "start": 972.0,
+      "end": 975.52,
+      "text": "Right. In energy, the picture was a bit down year-over-year for Chevron.",
+      "zh": ""
+    },
+    {
+      "start": 975.52,
+      "end": 977.76,
+      "text": "Net income, 2.5 billion dollars.",
+      "zh": ""
+    },
+    {
+      "start": 977.76,
+      "end": 979.52,
+      "text": "Down from 4.4 billion dollars.",
+      "zh": ""
+    },
+    {
+      "start": 979.52,
+      "end": 983.04,
+      "text": "Revenue is also lower, partly hit by evaluation adjustment on HES shares.",
+      "zh": ""
+    },
+    {
+      "start": 983.04,
+      "end": 983.92,
+      "text": "Next on mobile.",
+      "zh": ""
+    },
+    {
+      "start": 983.92,
+      "end": 985.6,
+      "text": "Earnings also down slightly from Q1,",
+      "zh": ""
+    },
+    {
+      "start": 985.6,
+      "end": 988.88,
+      "text": "but they specifically highlighted the Permian production potential.",
+      "zh": ""
+    },
+    {
+      "start": 988.88,
+      "end": 992.64,
+      "text": "Suggest continued focus and investment in that key U.S. oil region.",
+      "zh": ""
+    },
+    {
+      "start": 992.64,
+      "end": 993.92,
+      "text": "Okay, moving to industrials.",
+      "zh": ""
+    },
+    {
+      "start": 993.92,
+      "end": 995.52,
+      "text": "GE Aerospace.",
+      "zh": ""
+    },
+    {
+      "start": 995.52,
+      "end": 997.2,
+      "text": "Lots of focus on engines.",
+      "zh": ""
+    },
+    {
+      "start": 997.2,
+      "end": 1002.24,
+      "text": "Working with Boeing on certifying a durability kit for the LAP-1B engine.",
+      "zh": ""
+    },
+    {
+      "start": 1002.24,
+      "end": 1004.24,
+      "text": "Rolling out blade improvements.",
+      "zh": ""
+    },
+    {
+      "start": 1004.24,
+      "end": 1007.84,
+      "text": "Their big GE9X engine, the most tested ever,",
+      "zh": ""
+    },
+    {
+      "start": 1007.84,
+      "end": 1010.88,
+      "text": "went through dust testing prelaunch to inform design tweaks.",
+      "zh": ""
+    },
+    {
+      "start": 1010.88,
+      "end": 1013.12,
+      "text": "Sounds like long-term iterative improvement.",
+      "zh": ""
+    },
+    {
+      "start": 1013.12,
+      "end": 1013.84,
+      "text": "How's business?",
+      "zh": ""
+    },
+    {
+      "start": 1013.84,
+      "end": 1016.48,
+      "text": "Airbody engine revenue is beating expectations,",
+      "zh": ""
+    },
+    {
+      "start": 1016.48,
+      "end": 1021.44,
+      "text": "thanks to LE growth and the long life of the older CFM56 fleet.",
+      "zh": ""
+    },
+    {
+      "start": 1021.44,
+      "end": 1023.92,
+      "text": "Widebody services expected to grow steadily too.",
+      "zh": ""
+    },
+    {
+      "start": 1024.56,
+      "end": 1029.2,
+      "text": "They do anticipate a profit headwind next year from initial GE9X shipments,",
+      "zh": ""
+    },
+    {
+      "start": 1029.2,
+      "end": 1031.12,
+      "text": "which usually have higher upfront losses.",
+      "zh": ""
+    },
+    {
+      "start": 1031.12,
+      "end": 1031.68,
+      "text": "Makes sense.",
+      "zh": ""
+    },
+    {
+      "start": 1031.68,
+      "end": 1033.92,
+      "text": "Now, automotive and specifically Tesla.",
+      "zh": ""
+    },
+    {
+      "start": 1033.92,
+      "end": 1035.36,
+      "text": "Big focus on autonomy, right?",
+      "zh": ""
+    },
+    {
+      "start": 1035.36,
+      "end": 1036.16,
+      "text": "Huge focus.",
+      "zh": ""
+    },
+    {
+      "start": 1036.16,
+      "end": 1040.32,
+      "text": "They hit a record 20% sequential jump in test drives in North America.",
+      "zh": ""
+    },
+    {
+      "start": 1040.32,
+      "end": 1044.72,
+      "text": "Launched a new long-range RWD Model Y variant to attract more buyers.",
+      "zh": ""
+    },
+    {
+      "start": 1044.72,
+      "end": 1046.56,
+      "text": "And FSD, full self-driving.",
+      "zh": ""
+    },
+    {
+      "start": 1046.56,
+      "end": 1050.56,
+      "text": "Preparing for a broader supervised release in China pending regulatory approval.",
+      "zh": ""
+    },
+    {
+      "start": 1050.56,
+      "end": 1052.72,
+      "text": "They also launched the Model Y in India.",
+      "zh": ""
+    },
+    {
+      "start": 1052.72,
+      "end": 1054.88,
+      "text": "Big move into the world's third largest car market.",
+      "zh": ""
+    },
+    {
+      "start": 1054.88,
+      "end": 1055.84,
+      "text": "And the Robotaxi.",
+      "zh": ""
+    },
+    {
+      "start": 1055.84,
+      "end": 1057.76,
+      "text": "They reported rolling it out in Austin, Texas.",
+      "zh": ""
+    },
+    {
+      "start": 1058.32,
+      "end": 1062.24,
+      "text": "And even autonomously delivered a car from the factory straight to a customer's home.",
+      "zh": ""
+    },
+    {
+      "start": 1062.24,
+      "end": 1063.28,
+      "text": "That's quite something.",
+      "zh": ""
+    },
+    {
+      "start": 1063.28,
+      "end": 1065.12,
+      "text": "What's the grand ambition there?",
+      "zh": ""
+    },
+    {
+      "start": 1065.12,
+      "end": 1068.32,
+      "text": "Their stated goal is to address half the population of the U.S.",
+      "zh": ""
+    },
+    {
+      "start": 1068.32,
+      "end": 1071.28,
+      "text": "with autonomous ride-hailing by the end of this year.",
+      "zh": ""
+    },
+    {
+      "start": 1071.28,
+      "end": 1072.64,
+      "text": "Subject to approvals, of course.",
+      "zh": ""
+    },
+    {
+      "start": 1073.28,
+      "end": 1078.16,
+      "text": "They expect service areas and vehicle numbers to grow at a hyper-exponential rate.",
+      "zh": ""
+    },
+    {
+      "start": 1078.16,
+      "end": 1080.88,
+      "text": "Hyper-exponential, that's ambitious.",
+      "zh": ""
+    },
+    {
+      "start": 1080.88,
+      "end": 1081.44,
+      "text": "Very.",
+      "zh": ""
+    },
+    {
+      "start": 1081.44,
+      "end": 1084.16,
+      "text": "They see FSD as the single biggest demand driver.",
+      "zh": ""
+    },
+    {
+      "start": 1084.72,
+      "end": 1087.36,
+      "text": "They're pushing for approvals in Europe and China too.",
+      "zh": ""
+    },
+    {
+      "start": 1087.36,
+      "end": 1090.32,
+      "text": "It really highlights the race between the tech and the regulators.",
+      "zh": ""
+    },
+    {
+      "start": 1090.32,
+      "end": 1092.32,
+      "text": "Definitely a space to watch closely.",
+      "zh": ""
+    },
+    {
+      "start": 1092.32,
+      "end": 1094.24,
+      "text": "Okay, let's round things out with Telecom.",
+      "zh": ""
+    },
+    {
+      "start": 1094.24,
+      "end": 1097.36,
+      "text": "Keeping us connected, exploring new stuff like satellite services.",
+      "zh": ""
+    },
+    {
+      "start": 1097.36,
+      "end": 1097.92,
+      "text": "Right.",
+      "zh": ""
+    },
+    {
+      "start": 1097.92,
+      "end": 1100.56,
+      "text": "T-Mobile US reported fabulously well.",
+      "zh": ""
+    },
+    {
+      "start": 1100.56,
+      "end": 1103.44,
+      "text": "ARPA growth average revenue per account.",
+      "zh": ""
+    },
+    {
+      "start": 1103.44,
+      "end": 1105.84,
+      "text": "Underpinning service revenue growth of at least 6%.",
+      "zh": ""
+    },
+    {
+      "start": 1106.48,
+      "end": 1108.0,
+      "text": "And satellite is playing a role.",
+      "zh": ""
+    },
+    {
+      "start": 1108.0,
+      "end": 1108.8,
+      "text": "Apparently so.",
+      "zh": ""
+    },
+    {
+      "start": 1109.36,
+      "end": 1113.6,
+      "text": "They said T-Satellite surprised even them with its contribution to ARPA growth.",
+      "zh": ""
+    },
+    {
+      "start": 1113.6,
+      "end": 1117.92,
+      "text": "It's helping them serve rural markets where their wind share is much higher than their",
+      "zh": ""
+    },
+    {
+      "start": 1117.92,
+      "end": 1119.6,
+      "text": "overall household share suggests.",
+      "zh": ""
+    },
+    {
+      "start": 1119.6,
+      "end": 1121.44,
+      "text": "This is finding new customers.",
+      "zh": ""
+    },
+    {
+      "start": 1121.44,
+      "end": 1122.08,
+      "text": "Exactly.",
+      "zh": ""
+    },
+    {
+      "start": 1122.08,
+      "end": 1123.92,
+      "text": "It fits their dual strategy.",
+      "zh": ""
+    },
+    {
+      "start": 1123.92,
+      "end": 1127.84,
+      "text": "Maximize returns from existing fallow capacity, unused network,",
+      "zh": ""
+    },
+    {
+      "start": 1127.84,
+      "end": 1133.28,
+      "text": "and smartly invest in new opportunities like the planned merger with US cellular",
+      "zh": ""
+    },
+    {
+      "start": 1133.28,
+      "end": 1136.16,
+      "text": "to boost competitiveness in smaller rural markets.",
+      "zh": ""
+    },
+    {
+      "start": 1136.96,
+      "end": 1137.68,
+      "text": "Wow.",
+      "zh": ""
+    },
+    {
+      "start": 1137.68,
+      "end": 1139.2,
+      "text": "We have covered a ton of ground today.",
+      "zh": ""
+    },
+    {
+      "start": 1139.2,
+      "end": 1143.28,
+      "text": "From that AI arms race and tech to how consumers are spending,",
+      "zh": ""
+    },
+    {
+      "start": 1143.28,
+      "end": 1147.6,
+      "text": "health breakthroughs, finance, energy, connectivity, it's a huge landscape.",
+      "zh": ""
+    },
+    {
+      "start": 1147.6,
+      "end": 1148.24,
+      "text": "It really is.",
+      "zh": ""
+    },
+    {
+      "start": 1148.24,
+      "end": 1151.36,
+      "text": "And what stands out I think is how interconnected it all is.",
+      "zh": ""
+    },
+    {
+      "start": 1151.36,
+      "end": 1153.28,
+      "text": "AI isn't just a tech thing, right?",
+      "zh": ""
+    },
+    {
+      "start": 1153.28,
+      "end": 1156.32,
+      "text": "It's enabling predictive fraud detection for MasterCard,",
+      "zh": ""
+    },
+    {
+      "start": 1156.4,
+      "end": 1158.88,
+      "text": "accelerating drug discovery for Lily and Roche,",
+      "zh": ""
+    },
+    {
+      "start": 1158.88,
+      "end": 1161.52,
+      "text": "optimizing retail supply chains for Walmart,",
+      "zh": ""
+    },
+    {
+      "start": 1161.52,
+      "end": 1164.0,
+      "text": "powering Tesla's autonomous driving ambitions.",
+      "zh": ""
+    },
+    {
+      "start": 1164.0,
+      "end": 1166.4,
+      "text": "And consumer behavior feeds right back into that.",
+      "zh": ""
+    },
+    {
+      "start": 1166.4,
+      "end": 1169.52,
+      "text": "People demand more personalized, efficient digital experiences,",
+      "zh": ""
+    },
+    {
+      "start": 1169.52,
+      "end": 1172.56,
+      "text": "which in turn drives the need for all that tech infrastructure we started with.",
+      "zh": ""
+    },
+    {
+      "start": 1172.56,
+      "end": 1173.04,
+      "text": "Exactly.",
+      "zh": ""
+    },
+    {
+      "start": 1173.04,
+      "end": 1174.48,
+      "text": "It's this intricate web.",
+      "zh": ""
+    },
+    {
+      "start": 1174.48,
+      "end": 1176.48,
+      "text": "So as we wrap up, here's something to think about.",
+      "zh": ""
+    },
+    {
+      "start": 1177.04,
+      "end": 1180.64,
+      "text": "We talked about all these big trends and results from these global giants,",
+      "zh": ""
+    },
+    {
+      "start": 1180.64,
+      "end": 1184.88,
+      "text": "but what seemingly minor innovation or trend we touched on today?",
+      "zh": ""
+    },
+    {
+      "start": 1185.44,
+      "end": 1188.8,
+      "text": "What small seed could quietly grow into something massive,",
+      "zh": ""
+    },
+    {
+      "start": 1188.8,
+      "end": 1191.6,
+      "text": "something industry altering in the next five years?",
+      "zh": ""
+    },
+    {
+      "start": 1191.6,
+      "end": 1194.24,
+      "text": "Maybe it's the efficiency from Salesforce's agent force.",
+      "zh": ""
+    },
+    {
+      "start": 1194.24,
+      "end": 1197.28,
+      "text": "Maybe it's the sheer scale of the obesity drug market.",
+      "zh": ""
+    },
+    {
+      "start": 1197.28,
+      "end": 1200.4,
+      "text": "Maybe it's that relentless push for more chip capacity.",
+      "zh": ""
+    },
+    {
+      "start": 1200.4,
+      "end": 1202.32,
+      "text": "These earnings calls don't just tell us what happened.",
+      "zh": ""
+    },
+    {
+      "start": 1202.32,
+      "end": 1204.56,
+      "text": "They hint at what's becoming possible.",
+      "zh": ""
+    },
+    {
+      "start": 1204.56,
+      "end": 1207.12,
+      "text": "Things that could fundamentally change aspects of your daily life",
+      "zh": ""
+    },
+    {
+      "start": 1207.12,
+      "end": 1209.2,
+      "text": "you might take for granted right now.",
+      "zh": ""
+    },
+    {
+      "start": 1209.2,
+      "end": 1210.56,
+      "text": "What will you be watching for?",
+      "zh": ""
+    }
+  ]
+}

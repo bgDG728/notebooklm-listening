@@ -1,0 +1,360 @@
+Welcome to the deep dive, your express lane to understanding the most important global business
+insights. Today, we're cutting through the noise and jargon of Q2 2025 earnings calls.
+We've looked at dozens of global companies. Our mission really is to pull out those crucial
+nuggets of knowledge, maybe some surprising facts across all sorts of industries, tech,
+finance, healthcare, consumer goods. You name it. The idea is you can get instantly well
+informed about what's truly shaping our world. We're going to dive into the explosive
+growth of AI in cloud, dissect some shifts in consumer spending, look at health breakthroughs
+and examine energy and finance. Our goal, help you connect the dots and see what these trends
+mean for you. So, let's just jump right in. If you had to pick like one overarching theme
+from all these calls, what's the absolute biggest story right now?
+Oh, without a doubt, it's the relentless march of AI and cloud infrastructure. It's
+everywhere. We're seeing just unprecedented investment and integration, not just abstract
+ideas, but real drivers of revenue efficiency. And the numbers back it up, right? It's not
+just talk. You look at Alibaba, their cloud intelligence group revenue surged 26 percent
+year over year. That's what? RMB 33.4 billion, mostly fueled by AI demand. Exactly. And they're
+positioning themselves quite deliberately as this key enabler for other businesses,
+especially for that post-training of proprietary AI models. Right. Like for
+education or healthcare firms using Alibaba's open source models as a base, it naturally drives
+their cloud platform usage. Precisely. And they expect that cloud revenue to keep growing. But,
+you know, Alibaba's not alone here. Oracle is making some incredibly aggressive moves.
+Oh yeah. What are they saying? They're projecting total cloud revenue growth
+over 40 percent in fiscal 26. That's up from 24 percent this year. And cloud infrastructure
+growth over 70 percent. 70 percent. Wow. Yeah. Their aim is number one cloud database,
+number one cloud applications, and the number one builder of cloud infrastructure data centers.
+They actually said they'll build more than all competitors combined. That is a bold claim.
+How are they planning to pull that off? Well, a big piece is Oracle 23 AI. It's their AI
+data platform. They say it's unique because it makes customer data instantly available to
+popular LLMs. But, and this is key while maintaining privacy. Plus, they're embracing
+multi-cloud. Their database is now an Azure Google Cloud AWS gives customers real flexibility.
+Okay. That makes sense. Avoids lock in. Right. And what's also really interesting is their
+integrated AI agent-based application suites. Think ERP, supply chain, HR, healthcare, banking,
+the whole gamut. They claim no one else is trying that breadth with AI agents.
+So, Oracle's building these integrated suites while maybe Amazon's AWS sees things a bit
+differently. They mentioned usage is still in an earlier stage for AI compared to established
+apps. Yeah. It suggests that, you know, while lots of people are experimenting on AWS AI services,
+the truly massive expanse of use cases, maybe they're still taking shape. It's a
+different read on the maturity curve. And then you have Alphabet, Google's parent,
+investing heavily in what they call agentic capabilities. AI agents, they can
+chain events together for complex tasks. They're pretty upfront about the hurdles, though,
+reliability, that compounding latency issue, cost control.
+Sounds tricky.
+It is. But they say they're making robust progress. Believe they're at the frontier.
+It really highlights the massive engineering challenge behind the vision.
+And the sheer cost involved underscores this AI race. Look at NVIDIA.
+Oh, absolutely. NVIDIA now calls itself an AI infrastructure company.
+They're projecting a, get this, $3 to $4 trillion market over the next five years,
+just for this kind of infrastructure. Trillion. That's astronomical.
+It is. And an AI supercomputer, like their upcoming Ruben system, isn't just one chip.
+It's like six different types of chips, hundreds of thousands of GPU compute notes,
+massive scale. So it's not just about the GPUs anymore.
+Not at all. And NVIDIA stress performance per watt. It's critical.
+Yeah. Because data centers have power limits, right?
+So higher efficiency directly means more revenue you can generate from that fixed capacity.
+That makes the hardware innovation absolutely crucial. And speaking of hardware constraints,
+TSMC. Yeah, the chip giant. They confirmed capacity for their advanced three nanometer and
+five nanometer nodes is very tight and likely to stay that way for a couple of years.
+Demand from AI products is just huge, especially as things transition from four nanometer to
+three nanometer. So they're building more capacity.
+Actively. They're planning COAS capacity expansion that's the advanced packaging needed for AI
+accelerators for both 2025 and 2026. The bottleneck is real, but they're working hard to widen it.
+It's clear the foundations are being laid at an incredible speed. Cisco, for instance,
+saw AI infrastructure orders from their big web scale customers more than double their
+original target this fiscal year. Yeah, their CEO called AI a major tailwind,
+driving a whole architectural shift. They see opportunity everywhere, web scale, enterprise
+adoption, sovereign AI, these neoclouds, and that emerging agentic phase we talked about.
+And it connects directly to how businesses actually run. SAP is embedding AI everywhere
+with Jule, their generative AI assistant. Right. They expect AI to automate tasks like
+customer onboarding, patching systems, solving support tickets,
+freeing up people, boosting productivity. Salesforce seems to be proving that out already
+with Agent Force. That's their digital labor platform. It's already got over 8,000 deals in just
+two quarters since launch. Pretty impressive update. And the impact. They said it's handling 750,000
+customer support cases, cutting case volume by 7% year over year. Which allowed them to redeploy
+500 support staff into higher impact data and AI roles and save $50 million annually.
+That's a direct, measurable, bottom line impact and a workforce strategy shift, really.
+Absolutely. It shows AI isn't just about efficiency. It's reshaping jobs.
+And it's moving beyond the enterprise too. Look at Samsung with Galaxy AI.
+Right. They're pushing for more personalized, intuitive experience,
+moving from app-centric to agent-centric and from touch to multimodal interfaces.
+They're collaborating with Google, integrating things like cross-app interfaces in Gemini
+Live for real-time screen sharing. It's about making AI more seamless in daily life.
+And then there's Meta, looking even further ahead.
+Yeah, they reported seeing their AI systems start improving themselves.
+Slowly for now, they said, but undeniably. And their CEO's vision.
+He believed developing superintelligence, AI surpassing human intelligence in every way,
+is now in sight. Their goal is personal superintelligence for everyone. Big vision stuff.
+Well, that's maybe further out. IBM is seeing results now. Their data revenue grew 7%.
+Mostly from AI offerings. Automation up 14%. Helped by the Hashicorp acquisition.
+Just shows the sheer breadth, doesn't it? From foundational chips to superintelligence visions,
+AI is touching every part of the tech world. Okay, so while tech is building that AI future,
+let's shift gears. Let's talk about the consumer. How are people actually behaving right now?
+Yeah, it's definitely interesting. We're seeing some maybe contradictory signals and spending
+habits, what people see as value, how digital is changing things. It's a bit nuanced.
+Look at Home Depot. Sales were up. US Comp sells up a bit too.
+Okay, so some growth. Yeah, but what's interesting is how
+they saw customers doing more smaller home improvement projects. But at the same time,
+the average ticket price went up. How does that work? Driven by a 2.6% jump in sales of items
+over $1,000. So it suggests people are maybe cautious doing quick wins, but also willing
+to spend on bigger ticket quality items, investing in value, perhaps. Interesting.
+A sort of split personality in spending, McDonald's saw global comparable sales
+up nearly 4%. And loyalty is huge to them in the US. A quarter of their business comes from
+loyalty members. And those members visit way more often, like 2.5 times more. Loyalty pays off.
+Definitely. Their McValue programs, like the $5 meal deal, are working. But they did
+flag an issue. Core menu pricing for non-loyalty folks. Combo meals over $10
+can hurt that value perception. It's a constant balancing act.
+Coca-Cola seems to be managing that balance. In Latin America, volume dips slightly,
+but price mix was up 15%. 15%. Through pricing actions and favorable mix,
+they're expecting 5%, 6% organic revenue growth for the full year,
+so they seem confident in their strategy. Meanwhile, Walmart is just crushing it on
+value and convenience. US e-commerce sales up 26%. Delivery from stores up almost 50%.
+And fast delivery too, right? Yeah, about a third of those deliveries were in three
+hours or less. Incredible speed. They said AI isn't really driving top-line sales yet,
+but they're focused on value over 7,000 rollbacks, way up from last quarter.
+Clearly doubling down on price leadership. But it's not all about discounts, is it?
+Luxury seems okay. Not at all. Hermes reported growth everywhere.
+Japan up 16%. America's up 12%. They credit loyal, local clients in their value strategy,
+which for them means, you know, craftsmanship, exclusivity.
+A different kind of value. And L'Oreal is adapting too. Skincare face some headwinds,
+especially in North Asia. So what are they doing?
+Acquisitions Medic, Dr. G, and rolling out the affordable Mixa brand in Europe.
+But here's the AI link again. L'Oreal is using AI heavily in R&D. Predictive formulation,
+scanning molecules, building an AI moat for future innovation.
+Fascinating, even in cosmetics and P&G. Still commanding pricing power.
+Seems so. They operate in daily use categories where performance drives choice, right?
+They said price has been a positive growth driver for 19 in the last 20 years.
+Wow. Consistency.
+An ongoing innovation-tied Evo, new Oral-B toothbrushes, supports that.
+Even with tariffs hitting some skews, the overall price increase averages out around
+2.5%, kind of in line with inflation.
+Okay, and one last consumer shift, Philip Morris International.
+Yeah, this is a big one. Their smoke-free products are just exploding.
+In Japan, 10 million users. IQS is nearly half the total nicotine volume there now.
+And in the US.
+ZYN saw huge growth, over 36% in June-July, growing with the market.
+And crucially, the smoke-free business has a gross margin around 70% higher
+than their traditional cigarette business. That's a major strategic win.
+Yeah. Okay, from the consumer's wallet, let's pivot.
+The financial sector. Banks, payments. What's the pulse there?
+Credit, interest rates, digital transactions.
+Well, it's a bit of a mix again. Solid performance in some areas,
+but ongoing challenges too. Cheaply Morgan Chase, for instance.
+Net income up 13%. Revenue up 9%.
+Market revenue looks strong up 15%.
+But credit losses.
+Yeah, they set aside $2.8 billion for provisions, mostly in card services.
+Net charge-offs were $2.4 billion.
+And Jamie Dimon had some strong words for regulators, didn't he?
+He really did. Called for simplification, transparency,
+making things cheaper, safer. Criticized the overlap between rules like SLR, G-Sci-Fi,
+C-Share-R-Arrel, Basel-3.
+He mentioned C-R-Arenus.
+Yeah, suggesting the stress test might actually be holding back small business
+lending. It really highlights that tension between regulation and market fluidity.
+A key point. How about Bank of America? Similar picture on credit.
+Provisions for credit losses were up slightly, but net charge-offs held steady year over
+year. And their net interest income increased, so the high-rate environment is still helping
+their core lending business.
+And Berkshire Hathaway. Always an interesting one.
+Their overall revenues were down slightly, net earnings significantly lower,
+but that was mainly due to swings in investment gains losses.
+Equity investments showed that volatility a big loss noted for Kraft Heinz,
+but a gain for Occidental.
+So diversification, doing its job, smoothing things somewhat, any share buybacks?
+No, none reported in the first half of 2025.
+And they highlighted ongoing legal challenges, wildfires involving Pacific Corps,
+and that big verdict against their real estate brokerage over commissions.
+Show us the diverse risks even they face.
+Okay, shifting to payments tech. Mastercard.
+They're pushing contactless tap to pay everywhere.
+Shanghai Metro, 60 other transport operators globally.
+And their view on stablecoins is interesting.
+What's their take?
+They see them as additive, providing on-off ramps from fiat currency, interoperability,
+reach, trust for specific use cases.
+It's about integrating, not competing.
+And using AI.
+Oh yeah, big time.
+Using generative AI and their Decision Intelligence Pro
+to move from preventing fraud to predicting it.
+That's a significant step up in security strategy.
+Predicting fraud, powerful stuff.
+Visa thinking along similar lines with stablecoins.
+Very similar.
+They see stablecoins solving real problems,
+especially in emerging markets with volatile currencies or limited financial access.
+Visa's role. Providing the trust, standards, connectivity scale.
+The infrastructure layer for this evolving ecosystem.
+They also reported strong cross-border volume growth,
+with Visa Direct becoming a key global remittance tool.
+They're embedding themselves in these new flows.
+And briefly, Bank of China.
+They reported solid loan growth up nearly 7% to RMB $23 trillion.
+Emphasize their role as a state-owned bank supporting national strategies and the real economy.
+All right, let's move into healthcare and pharma.
+This sector is always fascinating.
+Drug developments, devices, market expansion.
+R&D seems to be paying off.
+It's definitely seeing some big results.
+Abview, for example.
+Net revenues grew 6.5%.
+Operationally, they raised their full-year guidance.
+SkyRizzy and Renflexes are on track for over $25 billion combined this year.
+$25 billion? That's huge.
+Yeah.
+Exceeding expectations.
+Yeah, and their neuroscience portfolio also saw strong double-digit growth,
+driven by VILEV and migraine treatments.
+Plus, they're actively doing deals, collaborations, in licensing,
+really building out that pipeline.
+It's that dual strategy, isn't it?
+Maximize the current blockbusters while aggressively fueling the future pipeline.
+Abbots doing impressive stuff in medical devices, too.
+Like what?
+Electrophysiology saw double-digit growth, launched a new catheter,
+structural heart up 12%, driven by several key products.
+Their cardiac rhythm management business is showing very sustainable growth.
+And developing new tech.
+Absolutely.
+A next-gen AVER device with 25% longer battery life is in the works.
+Parking a pivotal trial for a new pacing product in 2026.
+Plus, they're rolling out products globally in 50 countries,
+and still looking at M&A, a broad growth strategy.
+Johnson & Johnson also showing breath.
+Strong growth in both innovative medicine and med tech.
+And lots of positive data readouts, right?
+Across a whole range of conditions,
+myasthenia gravis, multiple myeloma, arthritis, cancer.
+Plus, they hit a milestone with their OTVAT robotic surgical system.
+First cases completed, more automation coming to the OR.
+Yeah, that's a trend to watch.
+But maybe the biggest buzz is around obesity care.
+Lilly reported strong results.
+Net income up 32%.
+And focusing R&D there?
+Definitely.
+While overall R&D costs dipped due to a prior impairment,
+late-stage trial activity increased, primarily focused on obesity.
+They're advancing amicretin, both subcutaneous and oral forms,
+into phase three next year.
+And Novo Nordisk, they're the other big player here.
+Dominant, really.
+The global branded obesity market grew 141% in volume.
+Novo's obesity care sales surged 58%.
+Like Lilly, they're also advancing amicretin to phase three.
+The demand must be incredible.
+So much so, they're committing massive capital,
+DKK, 65 billion in 2025, just to expand manufacturing capacity.
+Building out the whole supply chain.
+Ingredients, production, packaging.
+It's a huge bet on sustained growth.
+Wow. Roche also showing growth in pharma.
+Yep, pharma division sales up 10%,
+driven by strong performers like Phezgos, Aler, Hemlibra.
+Diagnostics was stable, absorbing some pricing pressure in China.
+They're also investing heavily in R&D breast cancer, obesity,
+hypertension treatments, plus computational biology
+and human model systems for early research.
+Looking for those selective high-impact bets.
+And lastly, in Health United Health Group, any major news?
+More about focus and leadership.
+Refocusing on performance discipline.
+Bias for action.
+Some key leadership changes announced at Optum,
+aiming to re-energize product development.
+Okay, let's shift to our final sectors.
+Energy, industrials, automotive.
+Core industries navigating some unique dynamics, supply chains,
+and new tech-like autonomy.
+Right. In energy, the picture was a bit down year-over-year for Chevron.
+Net income, 2.5 billion dollars.
+Down from 4.4 billion dollars.
+Revenue is also lower, partly hit by evaluation adjustment on HES shares.
+Next on mobile.
+Earnings also down slightly from Q1,
+but they specifically highlighted the Permian production potential.
+Suggest continued focus and investment in that key U.S. oil region.
+Okay, moving to industrials.
+GE Aerospace.
+Lots of focus on engines.
+Working with Boeing on certifying a durability kit for the LAP-1B engine.
+Rolling out blade improvements.
+Their big GE9X engine, the most tested ever,
+went through dust testing prelaunch to inform design tweaks.
+Sounds like long-term iterative improvement.
+How's business?
+Airbody engine revenue is beating expectations,
+thanks to LE growth and the long life of the older CFM56 fleet.
+Widebody services expected to grow steadily too.
+They do anticipate a profit headwind next year from initial GE9X shipments,
+which usually have higher upfront losses.
+Makes sense.
+Now, automotive and specifically Tesla.
+Big focus on autonomy, right?
+Huge focus.
+They hit a record 20% sequential jump in test drives in North America.
+Launched a new long-range RWD Model Y variant to attract more buyers.
+And FSD, full self-driving.
+Preparing for a broader supervised release in China pending regulatory approval.
+They also launched the Model Y in India.
+Big move into the world's third largest car market.
+And the Robotaxi.
+They reported rolling it out in Austin, Texas.
+And even autonomously delivered a car from the factory straight to a customer's home.
+That's quite something.
+What's the grand ambition there?
+Their stated goal is to address half the population of the U.S.
+with autonomous ride-hailing by the end of this year.
+Subject to approvals, of course.
+They expect service areas and vehicle numbers to grow at a hyper-exponential rate.
+Hyper-exponential, that's ambitious.
+Very.
+They see FSD as the single biggest demand driver.
+They're pushing for approvals in Europe and China too.
+It really highlights the race between the tech and the regulators.
+Definitely a space to watch closely.
+Okay, let's round things out with Telecom.
+Keeping us connected, exploring new stuff like satellite services.
+Right.
+T-Mobile US reported fabulously well.
+ARPA growth average revenue per account.
+Underpinning service revenue growth of at least 6%.
+And satellite is playing a role.
+Apparently so.
+They said T-Satellite surprised even them with its contribution to ARPA growth.
+It's helping them serve rural markets where their wind share is much higher than their
+overall household share suggests.
+This is finding new customers.
+Exactly.
+It fits their dual strategy.
+Maximize returns from existing fallow capacity, unused network,
+and smartly invest in new opportunities like the planned merger with US cellular
+to boost competitiveness in smaller rural markets.
+Wow.
+We have covered a ton of ground today.
+From that AI arms race and tech to how consumers are spending,
+health breakthroughs, finance, energy, connectivity, it's a huge landscape.
+It really is.
+And what stands out I think is how interconnected it all is.
+AI isn't just a tech thing, right?
+It's enabling predictive fraud detection for MasterCard,
+accelerating drug discovery for Lily and Roche,
+optimizing retail supply chains for Walmart,
+powering Tesla's autonomous driving ambitions.
+And consumer behavior feeds right back into that.
+People demand more personalized, efficient digital experiences,
+which in turn drives the need for all that tech infrastructure we started with.
+Exactly.
+It's this intricate web.
+So as we wrap up, here's something to think about.
+We talked about all these big trends and results from these global giants,
+but what seemingly minor innovation or trend we touched on today?
+What small seed could quietly grow into something massive,
+something industry altering in the next five years?
+Maybe it's the efficiency from Salesforce's agent force.
+Maybe it's the sheer scale of the obesity drug market.
+Maybe it's that relentless push for more chip capacity.
+These earnings calls don't just tell us what happened.
+They hint at what's becoming possible.
+Things that could fundamentally change aspects of your daily life
+you might take for granted right now.
+What will you be watching for?
