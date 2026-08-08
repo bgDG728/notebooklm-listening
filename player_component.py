@@ -1,22 +1,40 @@
 """
-自訂 JS 聽力練習播放器元件。
+自訂 JS 聽力練習播放器元件(自包含版,2026-08-08 重寫)。
 
-用 streamlit.components.v1.html 內嵌一個逐字稿清單元件。它不自己放音檔,
-而是透過 window.parent.document 抓取 st.audio() 產生的原生 <audio> 元素
-(components.v1.html 的 iframe 跟主頁面同源,可以直接互相存取 DOM)。
+舊版讓 iframe 裡的 JS 伸手跨框存取外層頁面(window.parent.document /
+window.parent.localStorage)去控制 st.audio() 產生的原生 <audio> 元素,
+桌面 Chromium 測試都正常,但會讓 iPhone Safari 的分頁渲染程序重複當機
+(見 git log)。這一版整個播放器(含 <audio> 元素本身)都自包含在同一個
+iframe 裡,完全不碰 window.parent,音檔用 base64 內嵌(先用
+compress_audio.py 壓過,不會塞進原始大檔案)。
+
+生字本用 iframe 自己的 localStorage 存 —— 因為 components.v1.html 的
+iframe 跟主頁面同源,瀏覽器本來就會把它們視為同一個儲存空間,不需要
+特地去跨框存取 window.parent.localStorage 才能共用。
 
 功能:
   - 播放時自動高亮當前句子並自動捲動到該句
-  - 點擊任一句直接跳轉播放,不需要整頁重新渲染(不會 st.rerun)
+  - 點擊任一句直接跳轉播放
   - 可調整播放速度、關鍵字搜尋跳轉
   - 單句循環播放(跟讀/精聽練習)
-  - 聽寫模式:文字預設隱藏,點句子播放時才顯示
+  - 聽寫模式:文字預設模糊,點句子播放時才顯示
   - 點英文單字加入生字本(存在瀏覽器 localStorage,可複製匯出)
+
+跟讀錄音(MediaRecorder)這次先不放進來,麥克風權限在 iframe 裡是另一個
+獨立的風險項目,要先確認這個自包含架構本身在手機上安全,再單獨處理。
 """
 
+import base64
 import json
+from pathlib import Path
 
 import streamlit.components.v1 as components
+
+MIME_BY_EXT = {
+    ".m4a": "audio/mp4",
+    ".mp3": "audio/mpeg",
+    ".wav": "audio/wav",
+}
 
 _TEMPLATE = """
 <div id="app">
@@ -40,6 +58,7 @@ _TEMPLATE = """
       padding: 4px 4px 10px;
       border-bottom: 1px solid #eee;
     }}
+    audio {{ width: 100%; margin-bottom: 8px; }}
     .controls-row {{
       display: flex;
       align-items: center;
@@ -121,11 +140,7 @@ _TEMPLATE = """
     .seg.dimmed {{ display: none; }}
     .seg .ts {{
       flex-shrink: 0;
-      width: 46px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 4px;
+      width: 40px;
       color: #888;
       font-size: 0.78rem;
       padding-top: 2px;
@@ -133,37 +148,6 @@ _TEMPLATE = """
     .seg .en {{ font-weight: 600; line-height: 1.6; font-size: 0.95rem; }}
     .seg .zh {{ color: #666; margin-top: 4px; line-height: 1.45; font-size: 0.88rem; }}
     .seg.hide-zh .zh {{ display: none; }}
-
-    .mic-btn {{
-      border: 1px solid #ddd;
-      background: #fff;
-      border-radius: 999px;
-      width: 26px;
-      height: 26px;
-      font-size: 0.85rem;
-      line-height: 1;
-      cursor: pointer;
-      padding: 0;
-    }}
-    .mic-btn.recording {{
-      background: #d00;
-      color: #fff;
-      border-color: #d00;
-      animation: mic-pulse 1s infinite;
-    }}
-    @keyframes mic-pulse {{
-      0%, 100% {{ opacity: 1; }}
-      50% {{ opacity: 0.5; }}
-    }}
-    .my-recording {{
-      display: none;
-      margin-top: 6px;
-      align-items: center;
-      gap: 6px;
-    }}
-    .my-recording.has-audio {{ display: flex; }}
-    .my-recording audio {{ height: 30px; max-width: 220px; }}
-    .my-recording .label {{ font-size: 0.75rem; color: #888; white-space: nowrap; }}
 
     .word {{
       border-radius: 3px;
@@ -195,6 +179,9 @@ _TEMPLATE = """
   </style>
 
   <div class="toolbar">
+    <audio id="player" controls preload="metadata">
+      <source src="{audio_src}" type="{audio_type}">
+    </audio>
     <div class="controls-row">
       <label>速度:</label>
       <button class="btn speed-btn" data-speed="0.75">0.75x</button>
@@ -232,6 +219,7 @@ _TEMPLATE = """
   const episodeTitle = {episode_title_json};
   const appEl = document.getElementById('app');
   const list = document.getElementById('list');
+  const player = document.getElementById('player');
   const zhToggle = document.getElementById('zhToggle');
   const search = document.getElementById('search');
   const statusEl = document.getElementById('status');
@@ -252,71 +240,16 @@ _TEMPLATE = """
 
   const VOCAB_KEY = 'notebooklm_listening_vocab';
 
-  // ---- 跟讀錄音(口說練習)----
-  let activeRecorder = null;
-  let activeRecordingRow = null;
-
-  async function toggleRecord(i, row) {{
-    const micBtn = row.querySelector('.mic-btn');
-
-    if (activeRecordingRow === i) {{
-      activeRecorder.stop();
-      return;
-    }}
-    if (activeRecorder) {{
-      activeRecorder.stop();
-    }}
-
-    if (!navigator.mediaDevices || !window.MediaRecorder) {{
-      statusEl.textContent = '這個瀏覽器不支援錄音功能。';
-      return;
-    }}
-
-    try {{
-      const stream = await navigator.mediaDevices.getUserMedia({{ audio: true }});
-      const recorder = new MediaRecorder(stream);
-      const chunks = [];
-      recorder.ondataavailable = (e) => {{ if (e.data.size > 0) chunks.push(e.data); }};
-      recorder.onstop = () => {{
-        stream.getTracks().forEach((t) => t.stop());
-        const blob = new Blob(chunks, {{ type: recorder.mimeType || 'audio/webm' }});
-        const url = URL.createObjectURL(blob);
-        const container = row.querySelector('.my-recording');
-        const audioEl = container.querySelector('audio');
-        if (audioEl.src) URL.revokeObjectURL(audioEl.src);
-        audioEl.src = url;
-        container.classList.add('has-audio');
-        micBtn.classList.remove('recording');
-        micBtn.textContent = '🎙️';
-        micBtn.title = '重新錄音';
-        activeRecorder = null;
-        activeRecordingRow = null;
-        statusEl.textContent = '';
-      }};
-      recorder.start();
-      activeRecorder = recorder;
-      activeRecordingRow = i;
-      micBtn.classList.add('recording');
-      micBtn.textContent = '⏹';
-      micBtn.title = '停止錄音';
-      statusEl.style.color = '#0d6efd';
-      statusEl.textContent = '錄音中...再按一次麥克風圖示停止。';
-    }} catch (e) {{
-      statusEl.style.color = '#b00';
-      statusEl.textContent = '無法使用麥克風(請確認已允許權限):' + e.message;
-    }}
-  }}
-
   function loadVocab() {{
     try {{
-      return JSON.parse(window.parent.localStorage.getItem(VOCAB_KEY) || '[]');
+      return JSON.parse(localStorage.getItem(VOCAB_KEY) || '[]');
     }} catch (e) {{
       return [];
     }}
   }}
 
   function saveVocab(list) {{
-    window.parent.localStorage.setItem(VOCAB_KEY, JSON.stringify(list));
+    localStorage.setItem(VOCAB_KEY, JSON.stringify(list));
   }}
 
   function renderVocab() {{
@@ -377,14 +310,6 @@ _TEMPLATE = """
     }});
   }}
 
-  function getPlayer() {{
-    try {{
-      return window.parent.document.querySelector('audio');
-    }} catch (e) {{
-      return null;
-    }}
-  }}
-
   function fmt(t) {{
     const m = Math.floor(t / 60);
     const s = Math.floor(t % 60).toString().padStart(2, '0');
@@ -413,17 +338,10 @@ _TEMPLATE = """
     div.className = 'seg';
     div.dataset.index = i;
     div.innerHTML = `
-      <div class="ts">
-        <div>${{fmt(seg.start)}}</div>
-        <button class="mic-btn" title="錄音跟讀">🎙️</button>
-      </div>
+      <div class="ts">${{fmt(seg.start)}}</div>
       <div style="flex:1">
         <div class="en"></div>
         <div class="zh"></div>
-        <div class="my-recording">
-          <span class="label">你的錄音:</span>
-          <audio controls></audio>
-        </div>
       </div>
     `;
     const enEl = div.querySelector('.en');
@@ -435,17 +353,8 @@ _TEMPLATE = """
       }}
     }});
     div.querySelector('.zh').textContent = seg.zh || '';
-    div.querySelector('.mic-btn').addEventListener('click', (e) => {{
-      e.stopPropagation();
-      toggleRecord(i, div);
-    }});
 
     div.addEventListener('click', () => {{
-      const player = getPlayer();
-      if (!player) {{
-        statusEl.textContent = '找不到播放器,請確認上方已載入音檔。';
-        return;
-      }}
       player.currentTime = seg.start;
       player.play();
       if (loopEnabled) loopIndex = i;
@@ -479,16 +388,13 @@ _TEMPLATE = """
     }}, {{ root: list, rootMargin: '400px 0px' }});
     rows.forEach((row) => observer.observe(row));
   }} else {{
-    // 舊瀏覽器沒有 IntersectionObserver,退回一次全部拆好
     rows.forEach((row, i) => hydrateWords(row, segments[i]));
   }}
 
   renderVocab();
   markSavedWords();
 
-  function onTimeUpdate() {{
-    const player = getPlayer();
-    if (!player) return;
+  player.addEventListener('timeupdate', () => {{
     const t = player.currentTime;
 
     if (loopEnabled && loopIndex !== -1) {{
@@ -512,15 +418,10 @@ _TEMPLATE = """
       if (dictationMode) rows[idx].classList.add('revealed');
       activeIndex = idx;
     }}
-  }}
+  }});
 
   document.querySelectorAll('.speed-btn').forEach(btn => {{
     btn.addEventListener('click', () => {{
-      const player = getPlayer();
-      if (!player) {{
-        statusEl.textContent = '找不到播放器,請確認上方已載入音檔。';
-        return;
-      }}
       document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       player.playbackRate = parseFloat(btn.dataset.speed);
@@ -591,28 +492,20 @@ _TEMPLATE = """
       }});
     }});
   }});
-
-  // 綁定播放進度事件。因為 iframe 跟主頁面同源,可以直接掛 listener。
-  // Streamlit 有時會重新渲染 <audio>,所以用輪詢方式確保綁定到目前存在的元素。
-  let boundPlayer = null;
-  setInterval(() => {{
-    const player = getPlayer();
-    if (player && player !== boundPlayer) {{
-      if (boundPlayer) boundPlayer.removeEventListener('timeupdate', onTimeUpdate);
-      player.addEventListener('timeupdate', onTimeUpdate);
-      boundPlayer = player;
-      statusEl.textContent = '';
-    }} else if (!player) {{
-      statusEl.textContent = '找不到播放器,請確認上方已載入音檔。';
-    }}
-  }}, 1000);
 }})();
 </script>
 """
 
 
-def render(segments: list[dict], episode_title: str = "", height: int = 760):
+def render(segments: list[dict], audio_path: Path, episode_title: str = "", height: int = 760):
+    audio_bytes = audio_path.read_bytes()
+    audio_b64 = base64.b64encode(audio_bytes).decode("ascii")
+    audio_type = MIME_BY_EXT.get(audio_path.suffix.lower(), "audio/mpeg")
+    audio_src = f"data:{audio_type};base64,{audio_b64}"
+
     html = _TEMPLATE.format(
+        audio_src=audio_src,
+        audio_type=audio_type,
         segments_json=json.dumps(segments, ensure_ascii=False),
         episode_title_json=json.dumps(episode_title, ensure_ascii=False),
     )
